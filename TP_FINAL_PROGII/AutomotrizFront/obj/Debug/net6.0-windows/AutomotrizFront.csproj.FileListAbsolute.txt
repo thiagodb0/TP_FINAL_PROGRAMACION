@@ -1,0 +1,17 @@
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.exe
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.deps.json
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.runtimeconfig.json
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.dll
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.pdb
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.AssemblyReference.cache
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Form1.resources
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.GenerateResource.cache
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.AssemblyInfoInputs.cache
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.AssemblyInfo.cs
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.CoreCompileInputs.cache
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.dll
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\refint\AutomotrizFront.dll
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.pdb
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.genruntimeconfig.cache
+C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\ref\AutomotrizFront.dll
