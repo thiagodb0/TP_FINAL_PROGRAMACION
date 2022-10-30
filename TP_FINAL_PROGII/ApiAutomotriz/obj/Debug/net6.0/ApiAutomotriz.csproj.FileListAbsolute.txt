@@ -33,3 +33,38 @@ C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\ApiAutom
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.pdb
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.genruntimeconfig.cache
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ref\ApiAutomotriz.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\appsettings.Development.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\appsettings.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\ApiAutomotriz.exe
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\ApiAutomotriz.deps.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\ApiAutomotriz.runtimeconfig.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\ApiAutomotriz.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\ApiAutomotriz.pdb
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\DataAPIAutomo.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\bin\Debug\net6.0\DataAPIAutomo.pdb
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.csproj.AssemblyReference.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.GeneratedMSBuildEditorConfig.editorconfig
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.AssemblyInfoInputs.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.AssemblyInfo.cs
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.csproj.CoreCompileInputs.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.MvcApplicationPartsAssemblyInfo.cs
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.MvcApplicationPartsAssemblyInfo.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\staticwebassets.build.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\staticwebassets.development.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\scopedcss\bundle\ApiAutomotriz.styles.css
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.csproj.CopyComplete
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\refint\ApiAutomotriz.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.pdb
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ApiAutomotriz.genruntimeconfig.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\ApiAutomotriz\obj\Debug\net6.0\ref\ApiAutomotriz.dll

@@ -15,3 +15,33 @@ C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\Automotr
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.pdb
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.genruntimeconfig.cache
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\ref\AutomotrizFront.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.exe
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.deps.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.runtimeconfig.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.pdb
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\DataAPIAutomo.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\DataAPIAutomo.pdb
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.AssemblyReference.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.frmInicio.resources
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.frmPrincipal.resources
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Properties.Resources.resources
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.GenerateResource.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.GeneratedMSBuildEditorConfig.editorconfig
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.AssemblyInfoInputs.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.AssemblyInfo.cs
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.CoreCompileInputs.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.CopyComplete
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\refint\AutomotrizFront.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.pdb
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.genruntimeconfig.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\ref\AutomotrizFront.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.NuevaFactura.resources
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.frmVendedores.resources
