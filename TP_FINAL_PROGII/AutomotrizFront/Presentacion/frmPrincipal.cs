@@ -83,5 +83,10 @@ namespace AutomotrizFront.Presentacion
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void PanelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
