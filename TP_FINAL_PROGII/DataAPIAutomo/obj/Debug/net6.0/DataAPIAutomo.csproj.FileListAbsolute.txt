@@ -10,3 +10,15 @@ C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\DataAPIA
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\refint\DataAPIAutomo.dll
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.pdb
 C:\Users\Thiago\OneDrive\Documentos\Trabajo LCI grupo16\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\ref\DataAPIAutomo.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\bin\Debug\net6.0\DataAPIAutomo.deps.json
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\bin\Debug\net6.0\DataAPIAutomo.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\bin\Debug\net6.0\DataAPIAutomo.pdb
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.csproj.AssemblyReference.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.GeneratedMSBuildEditorConfig.editorconfig
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.AssemblyInfoInputs.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.AssemblyInfo.cs
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.csproj.CoreCompileInputs.cache
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\refint\DataAPIAutomo.dll
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.pdb
+D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\ref\DataAPIAutomo.dll

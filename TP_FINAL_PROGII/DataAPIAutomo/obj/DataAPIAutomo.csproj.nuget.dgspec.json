@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thiago\\OneDrive\\Documentos\\Trabajo LCI grupo16\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {}
+    "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thiago\\OneDrive\\Documentos\\Trabajo LCI grupo16\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {
+    "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thiago\\OneDrive\\Documentos\\Trabajo LCI grupo16\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj",
+        "projectUniqueName": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj",
         "projectName": "DataAPIAutomo",
-        "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\Trabajo LCI grupo16\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj",
-        "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\Trabajo LCI grupo16\\TP_FINAL_PROGII\\DataAPIAutomo\\obj\\",
+        "projectPath": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj",
+        "packagesPath": "C:\\Users\\Nicolas herrera\\.nuget\\packages\\",
+        "outputPath": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nicolas herrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
