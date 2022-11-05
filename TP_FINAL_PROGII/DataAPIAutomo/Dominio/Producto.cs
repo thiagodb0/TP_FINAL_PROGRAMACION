@@ -14,10 +14,11 @@ namespace DataAPIAutomo.Dominio
         public int Tipo_prod { get; set; }
         public int Stock { get; set; }
         public int StockMin { get; set; }
-        public int Modelo { get; set; }
+        public int modelo { get; set; }
+
         public int Marca { get; set; }
 
-        public Producto(int codigo, string descripcion, double precio, int tipo_prod, int stock, int stockMin, int modelo, int marca)
+        public Producto(int codigo, string descripcion, double precio, int tipo_prod, int stock, int stockMin,int modelo, int marca)
         {
             Codigo = codigo;
             Descripcion = descripcion;
@@ -25,8 +26,18 @@ namespace DataAPIAutomo.Dominio
             Tipo_prod = tipo_prod;
             Stock = stock;
             StockMin = stockMin;
-            Modelo = modelo;
             Marca = marca;
+        }
+
+        public Producto()
+        {
+            Codigo = 0;
+            Descripcion = String.Empty;
+            Precio = 0;
+            Tipo_prod=0;
+            Stock = 0;
+            StockMin = 0;
+            Marca = 0;
         }
     }
 }

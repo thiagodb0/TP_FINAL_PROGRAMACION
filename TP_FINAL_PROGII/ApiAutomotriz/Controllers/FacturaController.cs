@@ -82,6 +82,43 @@ namespace ApiAutomotriz.Controllers
             }
         }
 
+        [HttpGet("/marcas")]
+
+        public IActionResult GetMarcas()
+        {
+            List<Marca> lst = null;
+            try
+            {
+                lst = dataApi.GetMarcas();
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+
+            }
+        }
+
+
+        [HttpGet("/modelos")]
+
+        public IActionResult GetModelos()
+        {
+            List<Modelo> lst = null;
+            try
+            {
+                lst = dataApi.GetModelos();
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+
+            }
+        }
+
+
+
 
         [HttpPost("/factura")]
         public IActionResult PostFactura(Factura oFactura)
@@ -90,7 +127,7 @@ namespace ApiAutomotriz.Controllers
             {
                 if (oFactura == null)
                 {
-                    return BadRequest("Datos de presupuesto incorrectos!");
+                    return BadRequest("Datos de la factura incorrectos!");
                 }
 
                 return Ok(dataApi.SaveFactura(oFactura));

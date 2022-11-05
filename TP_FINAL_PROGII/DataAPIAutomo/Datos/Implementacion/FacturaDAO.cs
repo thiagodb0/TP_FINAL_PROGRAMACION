@@ -159,5 +159,84 @@ namespace DataAPIAutomo.Datos.Implementacion
 
             return ok;
         }
+
+        public List<Marca> GetMarcas()
+        {
+            List<Marca> lst = new List<Marca>();
+            string sp = "PA_CONS_MARCA";
+            DataTable t = HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
+
+            foreach (DataRow dr in t.Rows)
+            {
+                int cod = Convert.ToInt32(dr["cod_marca"].ToString());
+                string nombre = dr["marca"].ToString();
+                Marca c = new Marca(cod, nombre);
+                lst.Add(c);
+
+
+            }
+            return lst;
+        }
+
+        public List<Modelo> GetModelo()
+        {
+            List<Modelo> lst = new List<Modelo>();
+            string sp = "PA_CONS_MODELOS";
+            DataTable t = HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
+
+            foreach (DataRow dr in t.Rows)
+            {
+                int cod = Convert.ToInt32(dr["cod_modelo"].ToString());
+                string nombre = dr["modelo"].ToString();
+                Modelo c = new Modelo(cod, nombre);
+                lst.Add(c);
+
+
+            }
+            return lst;
+        }
+
+
+        public bool CrearProducto(Producto producto)
+        {
+            bool ok = true;
+            SqlConnection cnn = HelperDB.ObtenerInstancia().ObtenerConexion();
+            SqlTransaction t = null;
+            SqlCommand cmd = new SqlCommand();
+            try
+            {
+
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                cmd.Connection = cnn;
+                cmd.Transaction = t;
+                cmd.CommandText = "PA_INSERT_PRODUCTO";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@cod", producto.Codigo);
+                cmd.Parameters.AddWithValue("@desc", producto.Descripcion);
+                cmd.Parameters.AddWithValue("@precio", producto.Precio);
+                cmd.Parameters.AddWithValue("@cod_tipo", producto.Tipo_prod);
+                cmd.Parameters.AddWithValue("@stock", producto.Stock);
+                cmd.Parameters.AddWithValue("@stockmin", producto.StockMin);
+                cmd.Parameters.AddWithValue("@model", producto.modelo);
+                cmd.Parameters.AddWithValue("@cod_marca", producto.Marca);
+                cmd.ExecuteNonQuery();
+                t.Commit();
+            }
+            catch (Exception)
+            {
+                if (t != null)
+                    t.Rollback();
+                ok = false;
+            }
+
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                    cnn.Close();
+            }
+
+            return ok;
+        }
     }
 }

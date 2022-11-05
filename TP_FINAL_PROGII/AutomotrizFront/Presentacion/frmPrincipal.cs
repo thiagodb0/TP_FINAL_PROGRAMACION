@@ -88,5 +88,10 @@ namespace AutomotrizFront.Presentacion
         {
 
         }
+
+        private void BtnProductos_Click(object sender, EventArgs e)
+        {
+            AbrirSubForm(new FrmProductos());
+        }
     }
 }

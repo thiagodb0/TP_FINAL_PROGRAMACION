@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AutomotrizFront.Servicios;
+using DataAPIAutomo.Dominio;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,110 @@ namespace AutomotrizFront.Presentacion
 {
     public partial class FrmProductos : Form
     {
+        Producto nuevo;
         public FrmProductos()
         {
             InitializeComponent();
+        }
+
+        private void FrmProductos_Load(object sender, EventArgs e)
+        {
+            nuevo = new Producto();
+            CargarAutosAsync();
+            DgvProductos.ForeColor = Color.Black;
+            CargarMarcasAsyinc();
+            
+        }
+
+
+       
+
+
+        private async void CargarAutosAsync()
+        {
+            string url = "http://localhost:5239/autos";
+            var result = await ClientSingleton.Getinstance().GetAsync(url);
+            var lst = JsonConvert.DeserializeObject<List<Producto>>(result);
+            foreach (Producto p in lst)
+            {
+                DgvProductos.Rows.Add(new object[] {p.Codigo, p.Descripcion, p.Precio ,p.Stock, p.StockMin, } );
+            }
+
+        }
+
+        private async void CargarMarcasAsyinc()
+        {
+            string url = "http://localhost:5239/marcas";
+            var result = await ClientSingleton.Getinstance().GetAsync(url);
+            var lst = JsonConvert.DeserializeObject<List<Marca>>(result);
+            CboMarca.DataSource = lst;
+            CboMarca.DisplayMember = "Descripcion";
+            CboMarca.ValueMember = "Id";
+
+        }
+
+        //private async void CargarModelosAsyinc()
+        //{
+        //    string url = "http://localhost:5239/modelos";
+        //    var result = await ClientSingleton.Getinstance().GetAsync(url);
+        //    var lst = JsonConvert.DeserializeObject<List<Modelo>>(result);
+        //    CboModelo.DataSource = lst;
+        //    CboModelo.DisplayMember = "Descripcion";
+        //    CboModelo.ValueMember = "Id";
+
+        //}
+
+
+        private async Task GuardarProductoAsync()
+        {
+            //datos del presupuesto:
+            nuevo.Codigo = Convert.ToInt32(TxtCodigo.Text);
+            nuevo.Descripcion = TxtDescripcion.Text;
+            nuevo.Precio = Convert.ToDouble(TxtPrecio.Text);
+            if (RbtAuto.Checked)
+            {
+                nuevo.Tipo_prod = 1;
+            }
+            else
+                nuevo.Tipo_prod = 2;
+            nuevo.Stock = Convert.ToInt32(TxtStock.Text);
+            nuevo.StockMin = Convert.ToInt32(TxtStockMin.Text);
+            nuevo.Marca = (int)CboMarca.SelectedIndex +1;
+            nuevo.modelo = 1;
+            
+
+            string bodyContent = JsonConvert.SerializeObject(nuevo);
+
+            string url = "http://localhost:5239/CrearProducto";
+            var result = await ClientSingleton.Getinstance().PostAsync(url, bodyContent);
+
+            if (result.Equals("true"))
+            {
+                MessageBox.Show("Producto Guardado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("ERROR. No se pudo guardar el producto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+
+        }
+
+
+
+        private void DgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void BtnCargar_Click(object sender, EventArgs e)
+        {
+            GuardarProductoAsync();
+            DgvProductos.Rows.Clear();
+            CargarAutosAsync();
         }
     }
 }

@@ -17,6 +17,12 @@ namespace DataAPIAutomo.Datos.Interfaces
 
         public List<FormaPago> GetFormaPagos();
 
+        public List<Marca> GetMarcas();
+
+        public List<Modelo> GetModelo();
+
         public bool Crear(Factura oFactura);
+
+        public bool CrearProducto(Producto producto);
     }
 }

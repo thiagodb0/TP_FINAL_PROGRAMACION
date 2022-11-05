@@ -36,5 +36,20 @@ namespace DataAPIAutomo.Fachada
         {
             return dao.Crear(oFactura);
         }
+
+        public List<Marca> GetMarcas()
+        {
+            return dao.GetMarcas();
+        }
+
+        public List<Modelo> GetModelos()
+        {
+            return dao.GetModelo();
+        }
+
+        public bool SaveProducto(Producto product)
+        {
+            return dao.CrearProducto(product);
+        }
     }
 }

@@ -16,6 +16,10 @@ namespace DataAPIAutomo.Fachada
 
         public List<FormaPago> GetFormaPagos();
 
+        public List<Marca> GetMarcas();
+        public List<Modelo> GetModelos();
+
         public bool SaveFactura(Factura oFactura);
+        public bool SaveProducto (Producto oProduct);   
     }
 }

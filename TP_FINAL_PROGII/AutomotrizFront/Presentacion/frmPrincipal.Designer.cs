@@ -250,6 +250,7 @@
             this.BtnProductos.TabIndex = 1;
             this.BtnProductos.Text = "Productos";
             this.BtnProductos.UseVisualStyleBackColor = true;
+            this.BtnProductos.Click += new System.EventHandler(this.BtnProductos_Click);
             // 
             // pictureBox1
             // 
