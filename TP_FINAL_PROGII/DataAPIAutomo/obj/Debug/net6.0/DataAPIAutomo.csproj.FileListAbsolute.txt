@@ -22,3 +22,15 @@ D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_P
 D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\refint\DataAPIAutomo.dll
 D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.pdb
 D:\tecnicaturaUTN\programacionUTN\2do Cuatrimestre\RepoTPProgramacion\TP_FINAL_PROGRAMACION\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\ref\DataAPIAutomo.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\bin\Debug\net6.0\DataAPIAutomo.deps.json
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\bin\Debug\net6.0\DataAPIAutomo.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\bin\Debug\net6.0\DataAPIAutomo.pdb
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.csproj.AssemblyReference.cache
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.AssemblyInfoInputs.cache
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.AssemblyInfo.cs
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.csproj.CoreCompileInputs.cache
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\refint\DataAPIAutomo.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\DataAPIAutomo.pdb
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\DataAPIAutomo\obj\Debug\net6.0\ref\DataAPIAutomo.dll

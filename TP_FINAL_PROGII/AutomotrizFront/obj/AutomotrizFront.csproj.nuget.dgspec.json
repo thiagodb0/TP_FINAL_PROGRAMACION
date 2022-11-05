@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\AutomotrizFront\\AutomotrizFront.csproj": {}
+    "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\AutomotrizFront\\AutomotrizFront.csproj": {}
   },
   "projects": {
-    "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\AutomotrizFront\\AutomotrizFront.csproj": {
+    "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\AutomotrizFront\\AutomotrizFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\AutomotrizFront\\AutomotrizFront.csproj",
+        "projectUniqueName": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\AutomotrizFront\\AutomotrizFront.csproj",
         "projectName": "AutomotrizFront",
-        "projectPath": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\AutomotrizFront\\AutomotrizFront.csproj",
-        "packagesPath": "C:\\Users\\Nicolas herrera\\.nuget\\packages\\",
-        "outputPath": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\AutomotrizFront\\obj\\",
+        "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\AutomotrizFront\\AutomotrizFront.csproj",
+        "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\AutomotrizFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nicolas herrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {
-                "projectPath": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj"
+              "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {
+                "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj"
               }
             }
           }
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,21 +67,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {
+    "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj",
+        "projectUniqueName": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj",
         "projectName": "DataAPIAutomo",
-        "projectPath": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj",
-        "packagesPath": "C:\\Users\\Nicolas herrera\\.nuget\\packages\\",
-        "outputPath": "D:\\tecnicaturaUTN\\programacionUTN\\2do Cuatrimestre\\RepoTPProgramacion\\TP_FINAL_PROGRAMACION\\TP_FINAL_PROGII\\DataAPIAutomo\\obj\\",
+        "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj",
+        "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nicolas herrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,7 +127,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

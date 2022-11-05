@@ -73,6 +73,16 @@ namespace AutomotrizFront.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap outline_add_shopping_cart_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_add_shopping_cart_white_24dp", resourceCulture);

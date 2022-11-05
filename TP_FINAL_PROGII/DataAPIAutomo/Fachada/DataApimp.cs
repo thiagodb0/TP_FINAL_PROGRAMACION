@@ -23,9 +23,18 @@ namespace DataAPIAutomo.Fachada
             return dao.GetAutos();
         }
 
-        public bool SavePresupuesto(Factura factura)
+        public List<Cliente> GetClientes()
         {
-            throw new NotImplementedException();
+            return dao.GetClientes();
+        }
+
+        public List<Vendedor> GetVendedor() { return dao.GetVendedores(); }
+
+        public List<FormaPago> GetFormaPagos() { return dao.GetFormaPagos(); }
+
+        public bool SaveFactura(Factura oFactura)
+        {
+            return dao.Crear(oFactura);
         }
     }
 }

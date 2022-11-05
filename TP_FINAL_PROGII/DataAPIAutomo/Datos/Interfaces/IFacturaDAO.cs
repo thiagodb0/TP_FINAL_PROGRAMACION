@@ -10,5 +10,13 @@ namespace DataAPIAutomo.Datos.Interfaces
     public interface IFacturaDAO
     {
        public List<Producto> GetAutos();
+
+        public List<Cliente> GetClientes();
+
+        public List<Vendedor> GetVendedores();
+
+        public List<FormaPago> GetFormaPagos();
+
+        public bool Crear(Factura oFactura);
     }
 }

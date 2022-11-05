@@ -10,9 +10,9 @@ namespace DataAPIAutomo.Dominio
     {
         public int CodFactura { get; set; }
         public DateTime Fecha { get; set; }
-        public int Cliente { get; set; }
-        public int Forma_Pago { get; set; }
-        public int Vendedor { get; set; }
+        public Cliente Cliente { get; set; }
+        public FormaPago Forma_Pago { get; set; }
+        public Vendedor Vendedor { get; set; }
         public List<Detalle> detalles { get; set; }
 
         public Factura()

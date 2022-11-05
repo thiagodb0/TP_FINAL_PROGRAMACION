@@ -16,7 +16,7 @@ namespace ApiAutomotriz.Controllers
             dataApi = new DataApimp();
         }
 
-        [HttpGet("/productos")]
+        [HttpGet("/autos")]
 
         public IActionResult GetAutos()
         {
@@ -33,5 +33,72 @@ namespace ApiAutomotriz.Controllers
             }
         }
 
+        [HttpGet("/clientes")]
+
+        public IActionResult GetClientes()
+        {
+            List<Cliente> lst = null;
+            try
+            {
+                lst = dataApi.GetClientes();
+                return Ok(lst);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+            }
+        }
+
+        [HttpGet("/vendedores")]
+        public IActionResult GetVendedores()
+        {
+            List<Vendedor> lst = null;
+            try
+            {
+                lst = dataApi.GetVendedor();
+                return Ok(lst);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+            }
+        }
+
+
+        [HttpGet("/formas_pago")]
+
+        public IActionResult GetFormasPago()
+        {
+            List<FormaPago> lst = null;
+            try
+            {
+                lst = dataApi.GetFormaPagos();
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+
+            }
+        }
+
+
+        [HttpPost("/factura")]
+        public IActionResult PostFactura(Factura oFactura)
+        {
+            try
+            {
+                if (oFactura == null)
+                {
+                    return BadRequest("Datos de presupuesto incorrectos!");
+                }
+
+                return Ok(dataApi.SaveFactura(oFactura));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
+            }
+        }
     }
 }

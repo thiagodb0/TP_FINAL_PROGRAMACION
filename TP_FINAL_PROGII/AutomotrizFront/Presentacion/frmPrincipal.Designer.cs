@@ -35,15 +35,15 @@
             this.btnMin = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BtnNueva = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnVendedores = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnVentas = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnProductos = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
@@ -51,6 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -63,8 +64,9 @@
             this.BarraTitulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.BarraTitulo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1300, 38);
+            this.BarraTitulo.Size = new System.Drawing.Size(1486, 51);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
@@ -72,9 +74,10 @@
             // 
             this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMax.Image = ((System.Drawing.Image)(resources.GetObject("btnMax.Image")));
-            this.btnMax.Location = new System.Drawing.Point(1233, 8);
+            this.btnMax.Location = new System.Drawing.Point(1409, 11);
+            this.btnMax.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(24, 24);
+            this.btnMax.Size = new System.Drawing.Size(27, 32);
             this.btnMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMax.TabIndex = 3;
             this.btnMax.TabStop = false;
@@ -84,9 +87,10 @@
             // 
             this.btnMinimizarTamanio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizarTamanio.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizarTamanio.Image")));
-            this.btnMinimizarTamanio.Location = new System.Drawing.Point(1233, 8);
+            this.btnMinimizarTamanio.Location = new System.Drawing.Point(1409, 11);
+            this.btnMinimizarTamanio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMinimizarTamanio.Name = "btnMinimizarTamanio";
-            this.btnMinimizarTamanio.Size = new System.Drawing.Size(24, 24);
+            this.btnMinimizarTamanio.Size = new System.Drawing.Size(27, 32);
             this.btnMinimizarTamanio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnMinimizarTamanio.TabIndex = 2;
             this.btnMinimizarTamanio.TabStop = false;
@@ -96,9 +100,10 @@
             // 
             this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
-            this.btnMin.Location = new System.Drawing.Point(1203, 8);
+            this.btnMin.Location = new System.Drawing.Point(1375, 11);
+            this.btnMin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(24, 24);
+            this.btnMin.Size = new System.Drawing.Size(27, 32);
             this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnMin.TabIndex = 1;
             this.btnMin.TabStop = false;
@@ -108,9 +113,10 @@
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.Image = global::AutomotrizFront.Properties.Resources.outline_close_white_24dp;
-            this.btnExit.Location = new System.Drawing.Point(1263, 7);
+            this.btnExit.Location = new System.Drawing.Point(1443, 9);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(24, 24);
+            this.btnExit.Size = new System.Drawing.Size(27, 32);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnExit.TabIndex = 0;
             this.btnExit.TabStop = false;
@@ -119,153 +125,163 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.MenuVertical.Controls.Add(this.label1);
             this.MenuVertical.Controls.Add(this.panel5);
-            this.MenuVertical.Controls.Add(this.button5);
+            this.MenuVertical.Controls.Add(this.BtnNueva);
             this.MenuVertical.Controls.Add(this.panel4);
-            this.MenuVertical.Controls.Add(this.button4);
+            this.MenuVertical.Controls.Add(this.BtnVendedores);
             this.MenuVertical.Controls.Add(this.panel2);
-            this.MenuVertical.Controls.Add(this.button2);
+            this.MenuVertical.Controls.Add(this.BtnVentas);
             this.MenuVertical.Controls.Add(this.panel1);
-            this.MenuVertical.Controls.Add(this.button1);
+            this.MenuVertical.Controls.Add(this.BtnProductos);
+            this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MenuVertical.Location = new System.Drawing.Point(0, 38);
+            this.MenuVertical.Location = new System.Drawing.Point(0, 51);
+            this.MenuVertical.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(220, 612);
+            this.MenuVertical.Size = new System.Drawing.Size(251, 816);
             this.MenuVertical.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(48, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 40);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "LOGO..";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel5.Location = new System.Drawing.Point(0, 217);
+            this.panel5.Location = new System.Drawing.Point(0, 289);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 32);
+            this.panel5.Size = new System.Drawing.Size(6, 43);
             this.panel5.TabIndex = 10;
             // 
-            // button5
+            // BtnNueva
             // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Image = global::AutomotrizFront.Properties.Resources.outline_add_shopping_cart_white_24dp;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 217);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(217, 32);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Nueva Venta";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.BtnNueva.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnNueva.FlatAppearance.BorderSize = 0;
+            this.BtnNueva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnNueva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNueva.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnNueva.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnNueva.Image = global::AutomotrizFront.Properties.Resources.outline_add_shopping_cart_white_24dp;
+            this.BtnNueva.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnNueva.Location = new System.Drawing.Point(3, 289);
+            this.BtnNueva.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnNueva.Name = "BtnNueva";
+            this.BtnNueva.Size = new System.Drawing.Size(248, 43);
+            this.BtnNueva.TabIndex = 9;
+            this.BtnNueva.Text = "Nueva Venta";
+            this.BtnNueva.UseVisualStyleBackColor = true;
+            this.BtnNueva.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel4.Location = new System.Drawing.Point(0, 179);
+            this.panel4.Location = new System.Drawing.Point(0, 239);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 32);
+            this.panel4.Size = new System.Drawing.Size(6, 43);
             this.panel4.TabIndex = 8;
             // 
-            // button4
+            // BtnVendedores
             // 
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Image = global::AutomotrizFront.Properties.Resources.outline_supervisor_account_white_24dp;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 179);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(217, 32);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Vendedores";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.BtnVendedores.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnVendedores.FlatAppearance.BorderSize = 0;
+            this.BtnVendedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnVendedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVendedores.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnVendedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVendedores.Image = global::AutomotrizFront.Properties.Resources.outline_supervisor_account_white_24dp;
+            this.BtnVendedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVendedores.Location = new System.Drawing.Point(3, 239);
+            this.BtnVendedores.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnVendedores.Name = "BtnVendedores";
+            this.BtnVendedores.Size = new System.Drawing.Size(248, 43);
+            this.BtnVendedores.TabIndex = 7;
+            this.BtnVendedores.Text = "Vendedores";
+            this.BtnVendedores.UseVisualStyleBackColor = true;
+            this.BtnVendedores.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel2.Location = new System.Drawing.Point(0, 141);
+            this.panel2.Location = new System.Drawing.Point(0, 188);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 32);
+            this.panel2.Size = new System.Drawing.Size(6, 43);
             this.panel2.TabIndex = 4;
             // 
-            // button2
+            // BtnVentas
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = global::AutomotrizFront.Properties.Resources.outline_query_stats_white_24dp;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(3, 141);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(217, 32);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Ventas";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnVentas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnVentas.FlatAppearance.BorderSize = 0;
+            this.BtnVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVentas.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnVentas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVentas.Image = global::AutomotrizFront.Properties.Resources.outline_query_stats_white_24dp;
+            this.BtnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVentas.Location = new System.Drawing.Point(3, 188);
+            this.BtnVentas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnVentas.Name = "BtnVentas";
+            this.BtnVentas.Size = new System.Drawing.Size(248, 43);
+            this.BtnVentas.TabIndex = 3;
+            this.BtnVentas.Text = "Ventas";
+            this.BtnVentas.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.panel1.Location = new System.Drawing.Point(0, 103);
+            this.panel1.Location = new System.Drawing.Point(0, 137);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 32);
+            this.panel1.Size = new System.Drawing.Size(6, 43);
             this.panel1.TabIndex = 2;
             // 
-            // button1
+            // BtnProductos
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = global::AutomotrizFront.Properties.Resources.outline_directions_car_filled_white_24dp;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 103);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 32);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Productos";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnProductos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnProductos.FlatAppearance.BorderSize = 0;
+            this.BtnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnProductos.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnProductos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnProductos.Image = global::AutomotrizFront.Properties.Resources.outline_directions_car_filled_white_24dp;
+            this.BtnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnProductos.Location = new System.Drawing.Point(3, 137);
+            this.BtnProductos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnProductos.Name = "BtnProductos";
+            this.BtnProductos.Size = new System.Drawing.Size(248, 43);
+            this.BtnProductos.TabIndex = 1;
+            this.BtnProductos.Text = "Productos";
+            this.BtnProductos.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AutomotrizFront.Properties.Resources.Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(-40, -110);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(326, 324);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // PanelContenedor
             // 
             this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(220, 38);
+            this.PanelContenedor.Location = new System.Drawing.Point(251, 51);
+            this.PanelContenedor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1080, 612);
+            this.PanelContenedor.Size = new System.Drawing.Size(1235, 816);
             this.PanelContenedor.TabIndex = 2;
             this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 650);
+            this.ClientSize = new System.Drawing.Size(1486, 867);
             this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.BarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
             this.BarraTitulo.ResumeLayout(false);
@@ -274,7 +290,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.MenuVertical.ResumeLayout(false);
-            this.MenuVertical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,17 +301,17 @@
         private PictureBox btnExit;
         private Panel MenuVertical;
         private Panel PanelContenedor;
-        private Button button1;
+        private Button BtnProductos;
         private Panel panel5;
-        private Button button5;
+        private Button BtnNueva;
         private Panel panel4;
-        private Button button4;
+        private Button BtnVendedores;
         private Panel panel2;
-        private Button button2;
+        private Button BtnVentas;
         private Panel panel1;
-        private Label label1;
         private PictureBox btnMin;
         private PictureBox btnMax;
         private PictureBox btnMinimizarTamanio;
+        private PictureBox pictureBox1;
     }
 }

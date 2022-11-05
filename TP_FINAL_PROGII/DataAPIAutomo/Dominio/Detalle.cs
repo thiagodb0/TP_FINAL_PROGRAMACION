@@ -8,11 +8,19 @@ namespace DataAPIAutomo.Dominio
 {
     public class Detalle
     {
-        public int CodDetalle { get; set; }
-        public int CodFactura { get; set; }
+        
         public Producto producto { get; set; }
         public int Cantidad { get; set; }
         public double PrecioVent { get; set; }
+
+        public Detalle (Producto producto, int cantidad, double precioVent)
+        {
+            this.producto = producto;
+            Cantidad = cantidad;
+            PrecioVent = precioVent;
+        }
+
+
 
 
         //Metodos
