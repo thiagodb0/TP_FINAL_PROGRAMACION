@@ -43,9 +43,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 93);
+            this.label1.Size = new System.Drawing.Size(300, 93);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Producido y Distribuido por:\r\nHerrera Nicolas 114403\r\nDi Bella Thiago 114084\r\n";
+            this.label1.Text = "Producido y distribuido por:\r\nHerrera Nicolas 114403\r\nDi Bella Thiago 114084\r\n";
             // 
             // label2
             // 
