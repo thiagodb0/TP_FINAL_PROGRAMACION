@@ -77,3 +77,5 @@ C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFron
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\ref\AutomotrizFront.dll
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmProductos.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.BajaFactura.resources
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmAcercaDe.resources

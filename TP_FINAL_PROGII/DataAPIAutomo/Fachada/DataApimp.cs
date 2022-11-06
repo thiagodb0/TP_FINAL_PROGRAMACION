@@ -51,5 +51,10 @@ namespace DataAPIAutomo.Fachada
         {
             return dao.CrearProducto(product);
         }
+
+        public int ProxFact()
+        {
+            return dao.ProxFact();
+        }
     }
 }

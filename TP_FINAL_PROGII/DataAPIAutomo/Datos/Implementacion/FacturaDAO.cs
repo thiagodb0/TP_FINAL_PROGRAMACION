@@ -238,5 +238,11 @@ namespace DataAPIAutomo.Datos.Implementacion
 
             return ok;
         }
+
+        public int ProxFact()
+        {
+            string sp = "PA_PROX_FACT";
+            return HelperDB.ObtenerInstancia().ConsultaEscalarSQL(sp, "@next");
+        }
     }
 }

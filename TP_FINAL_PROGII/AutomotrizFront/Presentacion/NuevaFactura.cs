@@ -27,12 +27,20 @@ namespace AutomotrizFront.Presentacion
             CargarClientesAsync();
             CargarVendedoresAsync();
             CargarFormasPago();
+            ProxFact();
             nueva = new Factura();
             DgvDetalles.ForeColor = Color.Black;
     
         }
 
-
+        private async void ProxFact()
+        {
+            string url = "http://localhost:5239/nrofact";
+            var result = await ClientSingleton.Getinstance().GetAsync(url);
+            var nro = result.ToString();
+            LblNroFact.Text = "N° Factura: " + nro;
+            
+        }
 
         private async void CargarAutosAsync()
         {
@@ -104,7 +112,15 @@ namespace AutomotrizFront.Presentacion
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (DgvDetalles.CurrentCell.ColumnIndex == 5)
+            {
+                nueva.QuitarDetalle(DgvDetalles.CurrentRow.Index);
+               
+                DgvDetalles.Rows.Remove(DgvDetalles.CurrentRow);
+                
+                CalcularTotal();
 
+            }
         }
 
         private void CboProductos_SelectedIndexChanged(object sender, EventArgs e)
@@ -180,6 +196,11 @@ namespace AutomotrizFront.Presentacion
             }
 
             await GuardarPresupuestoAsync();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
 

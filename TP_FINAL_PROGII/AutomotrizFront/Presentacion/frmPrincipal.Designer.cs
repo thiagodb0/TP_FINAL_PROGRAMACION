@@ -45,6 +45,7 @@
             this.BtnProductos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.LkbAcercaDe = new System.Windows.Forms.LinkLabel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizarTamanio)).BeginInit();
@@ -56,7 +57,7 @@
             // 
             // BarraTitulo
             // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.BarraTitulo.Controls.Add(this.btnMax);
             this.BarraTitulo.Controls.Add(this.btnMinimizarTamanio);
             this.BarraTitulo.Controls.Add(this.btnMin);
@@ -125,6 +126,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.MenuVertical.Controls.Add(this.LkbAcercaDe);
             this.MenuVertical.Controls.Add(this.panel5);
             this.MenuVertical.Controls.Add(this.BtnNueva);
             this.MenuVertical.Controls.Add(this.panel4);
@@ -273,6 +275,19 @@
             this.PanelContenedor.TabIndex = 2;
             this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
             // 
+            // LkbAcercaDe
+            // 
+            this.LkbAcercaDe.ActiveLinkColor = System.Drawing.Color.White;
+            this.LkbAcercaDe.AutoSize = true;
+            this.LkbAcercaDe.LinkColor = System.Drawing.Color.White;
+            this.LkbAcercaDe.Location = new System.Drawing.Point(12, 787);
+            this.LkbAcercaDe.Name = "LkbAcercaDe";
+            this.LkbAcercaDe.Size = new System.Drawing.Size(75, 20);
+            this.LkbAcercaDe.TabIndex = 13;
+            this.LkbAcercaDe.TabStop = true;
+            this.LkbAcercaDe.Text = "Acerca de";
+            this.LkbAcercaDe.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkbAcercaDe_LinkClicked);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -291,6 +306,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.MenuVertical.ResumeLayout(false);
+            this.MenuVertical.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -314,5 +330,6 @@
         private PictureBox btnMax;
         private PictureBox btnMinimizarTamanio;
         private PictureBox pictureBox1;
+        private LinkLabel LkbAcercaDe;
     }
 }

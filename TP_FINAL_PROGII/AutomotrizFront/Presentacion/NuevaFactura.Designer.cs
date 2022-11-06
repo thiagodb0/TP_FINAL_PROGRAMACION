@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblNroFact = new System.Windows.Forms.Label();
             this.CboClientes = new System.Windows.Forms.ComboBox();
             this.CboProductos = new System.Windows.Forms.ComboBox();
             this.DgvDetalles = new System.Windows.Forms.DataGridView();
-            this.CmnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cmnacciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.CboFormaPago = new System.Windows.Forms.ComboBox();
             this.CboVendedores = new System.Windows.Forms.ComboBox();
@@ -51,19 +45,26 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CmnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cmnacciones = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // LblNroFact
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(6, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nro de Factura: 1";
+            this.LblNroFact.AutoSize = true;
+            this.LblNroFact.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblNroFact.Location = new System.Drawing.Point(6, 11);
+            this.LblNroFact.Name = "LblNroFact";
+            this.LblNroFact.Size = new System.Drawing.Size(234, 28);
+            this.LblNroFact.TabIndex = 0;
+            this.LblNroFact.Text = "Nro de Factura: 1";
+            this.LblNroFact.Click += new System.EventHandler(this.label1_Click);
             // 
             // CboClientes
             // 
@@ -107,54 +108,6 @@
             this.DgvDetalles.Size = new System.Drawing.Size(1211, 420);
             this.DgvDetalles.TabIndex = 3;
             this.DgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // CmnCodigo
-            // 
-            this.CmnCodigo.HeaderText = "Codigo";
-            this.CmnCodigo.MinimumWidth = 6;
-            this.CmnCodigo.Name = "CmnCodigo";
-            this.CmnCodigo.Visible = false;
-            this.CmnCodigo.Width = 125;
-            // 
-            // CmnProducto
-            // 
-            this.CmnProducto.HeaderText = "Producto";
-            this.CmnProducto.MinimumWidth = 6;
-            this.CmnProducto.Name = "CmnProducto";
-            this.CmnProducto.ReadOnly = true;
-            this.CmnProducto.Width = 250;
-            // 
-            // CmnPrecio
-            // 
-            this.CmnPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CmnPrecio.HeaderText = "Precio";
-            this.CmnPrecio.MinimumWidth = 6;
-            this.CmnPrecio.Name = "CmnPrecio";
-            this.CmnPrecio.ReadOnly = true;
-            // 
-            // CmnCantidad
-            // 
-            this.CmnCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CmnCantidad.HeaderText = "Cantidad";
-            this.CmnCantidad.MinimumWidth = 6;
-            this.CmnCantidad.Name = "CmnCantidad";
-            this.CmnCantidad.ReadOnly = true;
-            // 
-            // CmnSubtotal
-            // 
-            this.CmnSubtotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CmnSubtotal.HeaderText = "Subtotal";
-            this.CmnSubtotal.MinimumWidth = 6;
-            this.CmnSubtotal.Name = "CmnSubtotal";
-            this.CmnSubtotal.ReadOnly = true;
-            // 
-            // Cmnacciones
-            // 
-            this.Cmnacciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Cmnacciones.HeaderText = "Acciones";
-            this.Cmnacciones.MinimumWidth = 6;
-            this.Cmnacciones.Name = "Cmnacciones";
-            this.Cmnacciones.ReadOnly = true;
             // 
             // dateTimePicker1
             // 
@@ -279,6 +232,55 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // CmnCodigo
+            // 
+            this.CmnCodigo.HeaderText = "Codigo";
+            this.CmnCodigo.MinimumWidth = 6;
+            this.CmnCodigo.Name = "CmnCodigo";
+            this.CmnCodigo.Visible = false;
+            this.CmnCodigo.Width = 125;
+            // 
+            // CmnProducto
+            // 
+            this.CmnProducto.HeaderText = "Producto";
+            this.CmnProducto.MinimumWidth = 6;
+            this.CmnProducto.Name = "CmnProducto";
+            this.CmnProducto.ReadOnly = true;
+            this.CmnProducto.Width = 250;
+            // 
+            // CmnPrecio
+            // 
+            this.CmnPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CmnPrecio.HeaderText = "Precio";
+            this.CmnPrecio.MinimumWidth = 6;
+            this.CmnPrecio.Name = "CmnPrecio";
+            this.CmnPrecio.ReadOnly = true;
+            // 
+            // CmnCantidad
+            // 
+            this.CmnCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CmnCantidad.HeaderText = "Cantidad";
+            this.CmnCantidad.MinimumWidth = 6;
+            this.CmnCantidad.Name = "CmnCantidad";
+            this.CmnCantidad.ReadOnly = true;
+            // 
+            // CmnSubtotal
+            // 
+            this.CmnSubtotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CmnSubtotal.HeaderText = "Subtotal";
+            this.CmnSubtotal.MinimumWidth = 6;
+            this.CmnSubtotal.Name = "CmnSubtotal";
+            this.CmnSubtotal.ReadOnly = true;
+            // 
+            // Cmnacciones
+            // 
+            this.Cmnacciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cmnacciones.HeaderText = "Acciones";
+            this.Cmnacciones.MinimumWidth = 6;
+            this.Cmnacciones.Name = "Cmnacciones";
+            this.Cmnacciones.ReadOnly = true;
+            this.Cmnacciones.Text = "Quitar";
+            // 
             // NuevaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -300,7 +302,7 @@
             this.Controls.Add(this.DgvDetalles);
             this.Controls.Add(this.CboProductos);
             this.Controls.Add(this.CboClientes);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblNroFact);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -317,16 +319,10 @@
 
         #endregion
 
-        private Label label1;
+        private Label LblNroFact;
         private ComboBox CboClientes;
         private ComboBox CboProductos;
         private DataGridView DgvDetalles;
-        private DataGridViewTextBoxColumn CmnCodigo;
-        private DataGridViewTextBoxColumn CmnProducto;
-        private DataGridViewTextBoxColumn CmnPrecio;
-        private DataGridViewTextBoxColumn CmnCantidad;
-        private DataGridViewTextBoxColumn CmnSubtotal;
-        private DataGridViewButtonColumn Cmnacciones;
         private DateTimePicker dateTimePicker1;
         private ComboBox CboFormaPago;
         private ComboBox CboVendedores;
@@ -340,5 +336,11 @@
         private Label label4;
         private Label label5;
         private PictureBox pictureBox1;
+        private DataGridViewTextBoxColumn CmnCodigo;
+        private DataGridViewTextBoxColumn CmnProducto;
+        private DataGridViewTextBoxColumn CmnPrecio;
+        private DataGridViewTextBoxColumn CmnCantidad;
+        private DataGridViewTextBoxColumn CmnSubtotal;
+        private DataGridViewButtonColumn Cmnacciones;
     }
 }

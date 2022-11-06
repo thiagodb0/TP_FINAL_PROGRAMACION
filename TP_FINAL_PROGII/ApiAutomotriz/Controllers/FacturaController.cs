@@ -118,6 +118,22 @@ namespace ApiAutomotriz.Controllers
         }
 
 
+        [HttpGet("/nrofact")]
+
+        public IActionResult GetProx()
+        {
+            int nro = 0;
+            try
+            {
+                nro = dataApi.ProxFact();
+                return Ok(nro);
+            }
+            catch(Exception)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+            }
+        }
+
 
 
         [HttpPost("/factura")]

@@ -24,5 +24,7 @@ namespace DataAPIAutomo.Datos.Interfaces
         public bool Crear(Factura oFactura);
 
         public bool CrearProducto(Producto producto);
+
+        public int ProxFact();
     }
 }

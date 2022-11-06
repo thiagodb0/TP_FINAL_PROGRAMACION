@@ -71,7 +71,10 @@ namespace AutomotrizFront.Presentacion
 
         private async Task GuardarProductoAsync()
         {
-            //datos del presupuesto:
+            
+
+
+            //datos del producto:
             nuevo.Codigo = Convert.ToInt32(TxtCodigo.Text);
             nuevo.Descripcion = TxtDescripcion.Text;
             nuevo.Precio = Convert.ToDouble(TxtPrecio.Text);
@@ -116,6 +119,38 @@ namespace AutomotrizFront.Presentacion
 
         private void BtnCargar_Click(object sender, EventArgs e)
         {
+            if (TxtCodigo.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Debe Indicar un codigo", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (TxtDescripcion.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Debe Indicar la descripcion del articulo", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (TxtStock.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Debe Indicar el stock del articulo", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (TxtStockMin.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Debe Indicar el stock minimo del articulo", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (CboMarca.Text.Equals(string.Empty))
+            {
+                MessageBox.Show("Debe seleccionar una marca", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if(RbtAuto.Checked == false || RbtRepuesto.Checked==false)
+            {
+                MessageBox.Show("Debe seleccionar el tipo de producto", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+
             GuardarProductoAsync();
             DgvProductos.Rows.Clear();
             CargarAutosAsync();
