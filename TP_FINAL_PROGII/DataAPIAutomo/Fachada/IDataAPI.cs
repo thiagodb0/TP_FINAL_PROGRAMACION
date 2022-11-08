@@ -22,5 +22,10 @@ namespace DataAPIAutomo.Fachada
         public bool SaveFactura(Factura oFactura);
         public bool SaveProducto (Producto oProduct);
         public int ProxFact();
+
+        public bool BajaFactura(NroParam nro);
+        public List<Factura> GetFacturas();
+
+        public List<ClienteReport> GetClientesReport(string nombre); 
     }
 }

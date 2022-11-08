@@ -56,5 +56,20 @@ namespace DataAPIAutomo.Fachada
         {
             return dao.ProxFact();
         }
+
+        public bool BajaFactura(NroParam nro)
+        {
+            return dao.BajaFactura(nro);
+        }
+
+        public List<Factura> GetFacturas()
+        {
+            return dao.GetFacturas();
+        }
+
+        public List<ClienteReport> GetClientesReport(string nombre)
+        {
+            return dao.GetClienteReports(nombre);
+        }
     }
 }

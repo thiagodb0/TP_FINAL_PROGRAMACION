@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AutomotrizFront.Servicios;
+using DataAPIAutomo.Dominio;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +18,56 @@ namespace AutomotrizFront.Presentacion
         public BajaFactura()
         {
             InitializeComponent();
+        }
+
+        private void BajaFactura_Load(object sender, EventArgs e)
+        {
+            CargarFacturasAsync();
+        }
+
+
+        private async void CargarFacturasAsync()
+        {
+            string url = "http://localhost:5239/facturas";
+            var result = await ClientSingleton.Getinstance().GetAsync(url);
+            var lst = JsonConvert.DeserializeObject<List<Factura>>(result);
+            foreach(Factura f in lst)
+            {
+                Dgfacturas.Rows.Add(new object[] { f.CodFactura, f.Fecha, f.Cliente.Nombre, f.Vendedor.Nombre, f.Forma_Pago.Descripcion });
+            }
+
+        }
+
+
+        private async void BajarFactura(NroParam nro)
+        {
+            string bodyContent = JsonConvert.SerializeObject(nro);
+
+            string url = "http://localhost:5239/bajaFact";
+            var result = await ClientSingleton.Getinstance().PostAsync(url, bodyContent);
+
+            if (result.Equals("true"))
+            {
+                MessageBox.Show("Factura dada de baja", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("ERROR. No se pudo dar de baja la Factura", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void Dgfacturas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void BtnDarBaja_Click(object sender, EventArgs e)
+        {
+            int num = Convert.ToInt32(Dgfacturas.CurrentRow.Cells["CmnNroFact"].Value.ToString());
+            NroParam nro = new NroParam(num);
+            BajarFactura(nro);
         }
     }
 }

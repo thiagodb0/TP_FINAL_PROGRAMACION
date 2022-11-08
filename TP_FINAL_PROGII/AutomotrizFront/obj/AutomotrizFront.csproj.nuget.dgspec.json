@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {
                 "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj"
+              },
+              "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\ReportAutomotriz\\ReportAutomotriz.csproj": {
+                "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\ReportAutomotriz\\ReportAutomotriz.csproj"
               }
             }
           }
@@ -129,6 +132,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\ReportAutomotriz\\ReportAutomotriz.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\ReportAutomotriz\\ReportAutomotriz.csproj",
+        "projectName": "ReportAutomotriz",
+        "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\ReportAutomotriz\\ReportAutomotriz.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

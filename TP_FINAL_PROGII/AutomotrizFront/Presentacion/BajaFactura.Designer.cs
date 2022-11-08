@@ -28,35 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.Dgfacturas = new System.Windows.Forms.DataGridView();
             this.CmnNroFact = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CmnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CmnCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CmnVendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnFormaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnDarBaja = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgfacturas)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // Dgfacturas
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.SlateGray;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgfacturas.BackgroundColor = System.Drawing.Color.SlateGray;
+            this.Dgfacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgfacturas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CmnNroFact,
             this.CmnFecha,
             this.CmnCliente,
             this.CmnVendedor,
-            this.CmnEstado});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 182);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1193, 506);
-            this.dataGridView1.TabIndex = 0;
+            this.CmnFormaPago});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Dgfacturas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Dgfacturas.Location = new System.Drawing.Point(12, 78);
+            this.Dgfacturas.Name = "Dgfacturas";
+            this.Dgfacturas.RowHeadersWidth = 51;
+            this.Dgfacturas.RowTemplate.Height = 29;
+            this.Dgfacturas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgfacturas.Size = new System.Drawing.Size(1193, 600);
+            this.Dgfacturas.TabIndex = 0;
+            this.Dgfacturas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgfacturas_CellContentClick);
             // 
             // CmnNroFact
             // 
@@ -90,13 +100,13 @@
             this.CmnVendedor.Name = "CmnVendedor";
             this.CmnVendedor.ReadOnly = true;
             // 
-            // CmnEstado
+            // CmnFormaPago
             // 
-            this.CmnEstado.HeaderText = "Estado";
-            this.CmnEstado.MinimumWidth = 6;
-            this.CmnEstado.Name = "CmnEstado";
-            this.CmnEstado.ReadOnly = true;
-            this.CmnEstado.Width = 125;
+            this.CmnFormaPago.HeaderText = "Forma Pago";
+            this.CmnFormaPago.MinimumWidth = 6;
+            this.CmnFormaPago.Name = "CmnFormaPago";
+            this.CmnFormaPago.ReadOnly = true;
+            this.CmnFormaPago.Width = 125;
             // 
             // BtnCancelar
             // 
@@ -115,22 +125,14 @@
             this.BtnDarBaja.TabIndex = 2;
             this.BtnDarBaja.Text = "Dar Baja";
             this.BtnDarBaja.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.BtnDarBaja.Click += new System.EventHandler(this.BtnDarBaja_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(12, 92);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(470, 31);
             this.label2.TabIndex = 4;
@@ -143,14 +145,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1217, 769);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnDarBaja);
             this.Controls.Add(this.BtnCancelar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Dgfacturas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BajaFactura";
             this.Text = "BajaFactura";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.BajaFactura_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgfacturas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,15 +160,14 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView Dgfacturas;
+        private Button BtnCancelar;
+        private Button BtnDarBaja;
+        private Label label2;
         private DataGridViewTextBoxColumn CmnNroFact;
         private DataGridViewTextBoxColumn CmnFecha;
         private DataGridViewTextBoxColumn CmnCliente;
         private DataGridViewTextBoxColumn CmnVendedor;
-        private DataGridViewTextBoxColumn CmnEstado;
-        private Button BtnCancelar;
-        private Button BtnDarBaja;
-        private Label label1;
-        private Label label2;
+        private DataGridViewTextBoxColumn CmnFormaPago;
     }
 }

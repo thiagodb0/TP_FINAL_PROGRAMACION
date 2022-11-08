@@ -35,17 +35,21 @@
             this.btnMin = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.BtnReporte = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.LkbAcercaDe = new System.Windows.Forms.LinkLabel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.BtnNueva = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.BtnVendedores = new System.Windows.Forms.Button();
+            this.BtnClientes = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtnVentas = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnProductos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.LkbAcercaDe = new System.Windows.Forms.LinkLabel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizarTamanio)).BeginInit();
@@ -126,11 +130,15 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.MenuVertical.Controls.Add(this.panel6);
+            this.MenuVertical.Controls.Add(this.BtnReporte);
+            this.MenuVertical.Controls.Add(this.panel3);
+            this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Controls.Add(this.LkbAcercaDe);
             this.MenuVertical.Controls.Add(this.panel5);
             this.MenuVertical.Controls.Add(this.BtnNueva);
             this.MenuVertical.Controls.Add(this.panel4);
-            this.MenuVertical.Controls.Add(this.BtnVendedores);
+            this.MenuVertical.Controls.Add(this.BtnClientes);
             this.MenuVertical.Controls.Add(this.panel2);
             this.MenuVertical.Controls.Add(this.BtnVentas);
             this.MenuVertical.Controls.Add(this.panel1);
@@ -142,6 +150,73 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(251, 816);
             this.MenuVertical.TabIndex = 1;
+            this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel6.Location = new System.Drawing.Point(0, 387);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(6, 43);
+            this.panel6.TabIndex = 15;
+            // 
+            // BtnReporte
+            // 
+            this.BtnReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.BtnReporte.FlatAppearance.BorderSize = 0;
+            this.BtnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReporte.Font = new System.Drawing.Font("Lucida Console", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnReporte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnReporte.Location = new System.Drawing.Point(3, 387);
+            this.BtnReporte.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnReporte.Name = "BtnReporte";
+            this.BtnReporte.Size = new System.Drawing.Size(248, 43);
+            this.BtnReporte.TabIndex = 16;
+            this.BtnReporte.Text = "Reporte Clientes";
+            this.BtnReporte.UseVisualStyleBackColor = true;
+            this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel3.Location = new System.Drawing.Point(0, 339);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(6, 43);
+            this.panel3.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Lucida Console", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::AutomotrizFront.Properties.Resources.Diseño_sin_título__2_;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 339);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(248, 43);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Bajar Factura";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // LkbAcercaDe
+            // 
+            this.LkbAcercaDe.ActiveLinkColor = System.Drawing.Color.White;
+            this.LkbAcercaDe.AutoSize = true;
+            this.LkbAcercaDe.LinkColor = System.Drawing.Color.White;
+            this.LkbAcercaDe.Location = new System.Drawing.Point(12, 787);
+            this.LkbAcercaDe.Name = "LkbAcercaDe";
+            this.LkbAcercaDe.Size = new System.Drawing.Size(75, 20);
+            this.LkbAcercaDe.TabIndex = 13;
+            this.LkbAcercaDe.TabStop = true;
+            this.LkbAcercaDe.Text = "Acerca de";
+            this.LkbAcercaDe.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkbAcercaDe_LinkClicked);
             // 
             // panel5
             // 
@@ -180,24 +255,24 @@
             this.panel4.Size = new System.Drawing.Size(6, 43);
             this.panel4.TabIndex = 8;
             // 
-            // BtnVendedores
+            // BtnClientes
             // 
-            this.BtnVendedores.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnVendedores.FlatAppearance.BorderSize = 0;
-            this.BtnVendedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.BtnVendedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVendedores.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnVendedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnVendedores.Image = global::AutomotrizFront.Properties.Resources.outline_supervisor_account_white_24dp;
-            this.BtnVendedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVendedores.Location = new System.Drawing.Point(3, 239);
-            this.BtnVendedores.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnVendedores.Name = "BtnVendedores";
-            this.BtnVendedores.Size = new System.Drawing.Size(248, 43);
-            this.BtnVendedores.TabIndex = 7;
-            this.BtnVendedores.Text = "Vendedores";
-            this.BtnVendedores.UseVisualStyleBackColor = true;
-            this.BtnVendedores.Click += new System.EventHandler(this.button4_Click);
+            this.BtnClientes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnClientes.FlatAppearance.BorderSize = 0;
+            this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClientes.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnClientes.Image = global::AutomotrizFront.Properties.Resources.outline_supervisor_account_white_24dp;
+            this.BtnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnClientes.Location = new System.Drawing.Point(3, 239);
+            this.BtnClientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnClientes.Name = "BtnClientes";
+            this.BtnClientes.Size = new System.Drawing.Size(248, 43);
+            this.BtnClientes.TabIndex = 7;
+            this.BtnClientes.Text = "Clientes";
+            this.BtnClientes.UseVisualStyleBackColor = true;
+            this.BtnClientes.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
@@ -275,19 +350,6 @@
             this.PanelContenedor.TabIndex = 2;
             this.PanelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContenedor_Paint);
             // 
-            // LkbAcercaDe
-            // 
-            this.LkbAcercaDe.ActiveLinkColor = System.Drawing.Color.White;
-            this.LkbAcercaDe.AutoSize = true;
-            this.LkbAcercaDe.LinkColor = System.Drawing.Color.White;
-            this.LkbAcercaDe.Location = new System.Drawing.Point(12, 787);
-            this.LkbAcercaDe.Name = "LkbAcercaDe";
-            this.LkbAcercaDe.Size = new System.Drawing.Size(75, 20);
-            this.LkbAcercaDe.TabIndex = 13;
-            this.LkbAcercaDe.TabStop = true;
-            this.LkbAcercaDe.Text = "Acerca de";
-            this.LkbAcercaDe.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LkbAcercaDe_LinkClicked);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -322,7 +384,7 @@
         private Panel panel5;
         private Button BtnNueva;
         private Panel panel4;
-        private Button BtnVendedores;
+        private Button BtnClientes;
         private Panel panel2;
         private Button BtnVentas;
         private Panel panel1;
@@ -331,5 +393,9 @@
         private PictureBox btnMinimizarTamanio;
         private PictureBox pictureBox1;
         private LinkLabel LkbAcercaDe;
+        private Button button1;
+        private Panel panel3;
+        private Panel panel6;
+        private Button BtnReporte;
     }
 }

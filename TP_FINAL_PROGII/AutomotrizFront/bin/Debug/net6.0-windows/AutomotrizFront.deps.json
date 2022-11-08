@@ -9,7 +9,8 @@
       "AutomotrizFront/1.0.0": {
         "dependencies": {
           "DataAPIAutomo": "1.0.0",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "ReportAutomotriz": "1.0.0"
         },
         "runtime": {
           "AutomotrizFront.dll": {}
@@ -105,6 +106,11 @@
         "runtime": {
           "DataAPIAutomo.dll": {}
         }
+      },
+      "ReportAutomotriz/1.0.0": {
+        "runtime": {
+          "ReportAutomotriz.exe": {}
+        }
       }
     }
   },
@@ -185,6 +191,11 @@
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "DataAPIAutomo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReportAutomotriz/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

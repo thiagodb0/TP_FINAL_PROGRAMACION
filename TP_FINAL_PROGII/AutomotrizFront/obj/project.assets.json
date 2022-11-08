@@ -152,6 +152,15 @@
         "runtime": {
           "bin/placeholder/DataAPIAutomo.dll": {}
         }
+      },
+      "ReportAutomotriz/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ReportAutomotriz.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReportAutomotriz.dll": {}
+        }
       }
     }
   },
@@ -500,12 +509,18 @@
       "type": "project",
       "path": "../DataAPIAutomo/DataAPIAutomo.csproj",
       "msbuildProject": "../DataAPIAutomo/DataAPIAutomo.csproj"
+    },
+    "ReportAutomotriz/1.0.0": {
+      "type": "project",
+      "path": "../ReportAutomotriz/ReportAutomotriz.csproj",
+      "msbuildProject": "../ReportAutomotriz/ReportAutomotriz.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "DataAPIAutomo >= 1.0.0",
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "ReportAutomotriz >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -537,6 +552,9 @@
           "projectReferences": {
             "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj": {
               "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\DataAPIAutomo\\DataAPIAutomo.csproj"
+            },
+            "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\ReportAutomotriz\\ReportAutomotriz.csproj": {
+              "projectPath": "C:\\Users\\Thiago\\OneDrive\\Documentos\\TP_FINAL_PROG\\TP_FINAL_PROGII\\ReportAutomotriz\\ReportAutomotriz.csproj"
             }
           }
         }

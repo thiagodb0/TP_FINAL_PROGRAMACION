@@ -14,7 +14,7 @@ namespace DataAPIAutomo.Datos.Implementacion
     {
         public List<Producto> GetAutos()
         {
-           
+
             {
                 List<Producto> lst = new List<Producto>();
 
@@ -48,7 +48,7 @@ namespace DataAPIAutomo.Datos.Implementacion
             string sp = "PA_CONS_CLIENTES";
             DataTable t = HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
 
-            foreach(DataRow dr in t.Rows)
+            foreach (DataRow dr in t.Rows)
             {
                 int cod = Convert.ToInt32(dr["cod_cliente"].ToString());
                 string nombre = dr["nom_cliente"].ToString();
@@ -63,7 +63,7 @@ namespace DataAPIAutomo.Datos.Implementacion
         {
             List<Vendedor> lst = new List<Vendedor>();
             string sp = "PA_CONS_VENDEDORES";
-            DataTable t =HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
+            DataTable t = HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
 
             foreach (DataRow dr in t.Rows)
             {
@@ -87,7 +87,7 @@ namespace DataAPIAutomo.Datos.Implementacion
             foreach (DataRow dr in t.Rows)
             {
                 int cod = Convert.ToInt32(dr["cod_forma_pago"].ToString());
-                string nombre = dr["descripcion"].ToString() ;
+                string nombre = dr["descripcion"].ToString();
                 FormaPago c = new FormaPago(cod, nombre);
                 lst.Add(c);
 
@@ -115,7 +115,7 @@ namespace DataAPIAutomo.Datos.Implementacion
                 cmd.Parameters.AddWithValue("@cod_cliente", oFactura.Cliente.Id);
                 cmd.Parameters.AddWithValue("@forma_pago", oFactura.Forma_Pago.Id);
                 cmd.Parameters.AddWithValue("@vendedor", oFactura.Vendedor.Id);
-                
+
 
                 //parámetro de salida:
                 SqlParameter pOut = new SqlParameter();
@@ -243,6 +243,104 @@ namespace DataAPIAutomo.Datos.Implementacion
         {
             string sp = "PA_PROX_FACT";
             return HelperDB.ObtenerInstancia().ConsultaEscalarSQL(sp, "@next");
+        }
+
+        public bool BajaFactura(NroParam nro)
+        {
+            bool ok = true;
+            SqlConnection cnn = HelperDB.ObtenerInstancia().ObtenerConexion();
+            SqlTransaction t = null;
+            SqlCommand cmd = new SqlCommand();
+            try
+            {
+
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                cmd.Connection = cnn;
+                cmd.Transaction = t;
+                cmd.CommandText = "PA_BAJA_FACT";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nro", nro.nro);
+
+                cmd.ExecuteNonQuery();
+                t.Commit();
+            }
+            catch (Exception)
+            {
+                if (t != null)
+                    t.Rollback();
+                ok = false;
+            }
+
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                    cnn.Close();
+            }
+
+            return ok;
+        }
+
+        public List<Factura> GetFacturas()
+        {
+            List<Factura> lst = new List<Factura>();
+            string sp = "PA_CONS_FACTURAS";
+            DataTable t = HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
+
+            foreach (DataRow dr in t.Rows)
+            {
+                int cod = Convert.ToInt32(dr["cod_factura"].ToString());
+                DateTime fecha = Convert.ToDateTime((dr["fecha"]).ToString());
+                int codCli = Convert.ToInt32((dr["cod_cliente"]).ToString());
+                string cliente = dr["Cliente"].ToString();
+                int codVend = Convert.ToInt32((dr["cod_vendedor"]).ToString());
+                string Vendedor = dr["Vendedor"].ToString();
+                int codFp = Convert.ToInt32((dr["cod_forma_pago"]).ToString());
+                string forma = dr["descripcion"].ToString();
+                Cliente c = new Cliente(codCli, cliente);
+                Vendedor v = new Vendedor(codVend, Vendedor);
+                FormaPago fp = new FormaPago(codFp, forma);
+                Factura f = new Factura(cod, fecha, c, fp, v);
+
+
+                lst.Add(f);
+
+
+            }
+            return lst;
+        }
+
+        public List<ClienteReport> GetClienteReports(string nombre)
+        {
+            List<ClienteReport> lst = new List<ClienteReport>();
+            string sp = "ClientesPromedio";
+            SqlConnection cnn = HelperDB.ObtenerInstancia().ObtenerConexion();
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(sp,cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@nombre", nombre);
+            DataTable t = new DataTable();
+            t.Load(cmd.ExecuteReader());
+
+
+            foreach (DataRow dr in t.Rows)
+            {
+                int cod = Convert.ToInt32(dr["Codigo"].ToString());
+                string cliente = dr["Cliente"].ToString();
+                double total = Convert.ToDouble(dr["Total"].ToString());
+                double Promedio = Convert.ToDouble(dr["Promedio"].ToString());
+                string primera = dr["Primera"].ToString();
+                Cliente c = new Cliente(cod, cliente);
+                ClienteReport cr = new ClienteReport(c, total, Promedio, primera);  
+
+
+
+                lst.Add(cr);
+
+
+            }
+            cnn.Close();
+            return lst;
         }
     }
 }

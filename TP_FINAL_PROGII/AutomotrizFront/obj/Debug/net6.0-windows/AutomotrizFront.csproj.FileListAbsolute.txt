@@ -61,7 +61,6 @@ C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFron
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.AssemblyReference.cache
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.frmInicio.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.frmPrincipal.resources
-C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.frmVendedores.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.NuevaFactura.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Properties.Resources.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.csproj.GenerateResource.cache
@@ -79,3 +78,11 @@ C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFron
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.BajaFactura.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmAcercaDe.resources
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\ReportAutomotriz.exe
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\ReportAutomotriz.pdb
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\ReportAutomotriz.exe.config
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.frmClientes.resources

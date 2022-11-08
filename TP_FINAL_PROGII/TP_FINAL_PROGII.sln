@@ -5,12 +5,14 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAPIAutomo", "DataAPIAutomo\DataAPIAutomo.csproj", "{B2E998BA-6159-4D5E-A847-10E9E713FF5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAutomotriz", "ApiAutomotriz\ApiAutomotriz.csproj", "{5A7EC5D5-CE22-43F4-84D8-D2E177B9457C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiAutomotriz", "ApiAutomotriz\ApiAutomotriz.csproj", "{5A7EC5D5-CE22-43F4-84D8-D2E177B9457C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomotrizFront", "AutomotrizFront\AutomotrizFront.csproj", "{66B60D62-A101-439A-AA1F-55E4592B4503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomotrizFront", "AutomotrizFront\AutomotrizFront.csproj", "{66B60D62-A101-439A-AA1F-55E4592B4503}"
 	ProjectSection(ProjectDependencies) = postProject
 		{B2E998BA-6159-4D5E-A847-10E9E713FF5F} = {B2E998BA-6159-4D5E-A847-10E9E713FF5F}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportAutomotriz", "ReportAutomotriz\ReportAutomotriz.csproj", "{3F8328A6-0079-4D0D-BD0B-FABCCA0D950F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,10 @@ Global
 		{66B60D62-A101-439A-AA1F-55E4592B4503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66B60D62-A101-439A-AA1F-55E4592B4503}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66B60D62-A101-439A-AA1F-55E4592B4503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8328A6-0079-4D0D-BD0B-FABCCA0D950F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8328A6-0079-4D0D-BD0B-FABCCA0D950F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8328A6-0079-4D0D-BD0B-FABCCA0D950F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8328A6-0079-4D0D-BD0B-FABCCA0D950F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

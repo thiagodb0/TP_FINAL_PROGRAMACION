@@ -32,6 +32,12 @@
             this.CboClientes = new System.Windows.Forms.ComboBox();
             this.CboProductos = new System.Windows.Forms.ComboBox();
             this.DgvDetalles = new System.Windows.Forms.DataGridView();
+            this.CmnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CmnSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cmnacciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.CboFormaPago = new System.Windows.Forms.ComboBox();
             this.CboVendedores = new System.Windows.Forms.ComboBox();
@@ -45,12 +51,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.CmnCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CmnSubtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cmnacciones = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDetalles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -108,6 +108,55 @@
             this.DgvDetalles.Size = new System.Drawing.Size(1211, 420);
             this.DgvDetalles.TabIndex = 3;
             this.DgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // CmnCodigo
+            // 
+            this.CmnCodigo.HeaderText = "Codigo";
+            this.CmnCodigo.MinimumWidth = 6;
+            this.CmnCodigo.Name = "CmnCodigo";
+            this.CmnCodigo.Visible = false;
+            this.CmnCodigo.Width = 125;
+            // 
+            // CmnProducto
+            // 
+            this.CmnProducto.HeaderText = "Producto";
+            this.CmnProducto.MinimumWidth = 6;
+            this.CmnProducto.Name = "CmnProducto";
+            this.CmnProducto.ReadOnly = true;
+            this.CmnProducto.Width = 250;
+            // 
+            // CmnPrecio
+            // 
+            this.CmnPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CmnPrecio.HeaderText = "Precio";
+            this.CmnPrecio.MinimumWidth = 6;
+            this.CmnPrecio.Name = "CmnPrecio";
+            this.CmnPrecio.ReadOnly = true;
+            // 
+            // CmnCantidad
+            // 
+            this.CmnCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CmnCantidad.HeaderText = "Cantidad";
+            this.CmnCantidad.MinimumWidth = 6;
+            this.CmnCantidad.Name = "CmnCantidad";
+            this.CmnCantidad.ReadOnly = true;
+            // 
+            // CmnSubtotal
+            // 
+            this.CmnSubtotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CmnSubtotal.HeaderText = "Subtotal";
+            this.CmnSubtotal.MinimumWidth = 6;
+            this.CmnSubtotal.Name = "CmnSubtotal";
+            this.CmnSubtotal.ReadOnly = true;
+            // 
+            // Cmnacciones
+            // 
+            this.Cmnacciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cmnacciones.HeaderText = "Acciones";
+            this.Cmnacciones.MinimumWidth = 6;
+            this.Cmnacciones.Name = "Cmnacciones";
+            this.Cmnacciones.ReadOnly = true;
+            this.Cmnacciones.Text = "Quitar";
             // 
             // dateTimePicker1
             // 
@@ -231,55 +280,6 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // CmnCodigo
-            // 
-            this.CmnCodigo.HeaderText = "Codigo";
-            this.CmnCodigo.MinimumWidth = 6;
-            this.CmnCodigo.Name = "CmnCodigo";
-            this.CmnCodigo.Visible = false;
-            this.CmnCodigo.Width = 125;
-            // 
-            // CmnProducto
-            // 
-            this.CmnProducto.HeaderText = "Producto";
-            this.CmnProducto.MinimumWidth = 6;
-            this.CmnProducto.Name = "CmnProducto";
-            this.CmnProducto.ReadOnly = true;
-            this.CmnProducto.Width = 250;
-            // 
-            // CmnPrecio
-            // 
-            this.CmnPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CmnPrecio.HeaderText = "Precio";
-            this.CmnPrecio.MinimumWidth = 6;
-            this.CmnPrecio.Name = "CmnPrecio";
-            this.CmnPrecio.ReadOnly = true;
-            // 
-            // CmnCantidad
-            // 
-            this.CmnCantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CmnCantidad.HeaderText = "Cantidad";
-            this.CmnCantidad.MinimumWidth = 6;
-            this.CmnCantidad.Name = "CmnCantidad";
-            this.CmnCantidad.ReadOnly = true;
-            // 
-            // CmnSubtotal
-            // 
-            this.CmnSubtotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CmnSubtotal.HeaderText = "Subtotal";
-            this.CmnSubtotal.MinimumWidth = 6;
-            this.CmnSubtotal.Name = "CmnSubtotal";
-            this.CmnSubtotal.ReadOnly = true;
-            // 
-            // Cmnacciones
-            // 
-            this.Cmnacciones.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Cmnacciones.HeaderText = "Acciones";
-            this.Cmnacciones.MinimumWidth = 6;
-            this.Cmnacciones.Name = "Cmnacciones";
-            this.Cmnacciones.ReadOnly = true;
-            this.Cmnacciones.Text = "Quitar";
             // 
             // NuevaFactura
             // 

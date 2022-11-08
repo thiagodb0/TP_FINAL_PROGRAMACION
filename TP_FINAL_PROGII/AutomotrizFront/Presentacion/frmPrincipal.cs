@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using ReportAutomotriz;
 
 namespace AutomotrizFront.Presentacion
 {
@@ -40,6 +41,7 @@ namespace AutomotrizFront.Presentacion
             if (PanelContenedor.Controls.Count>0)
             {
                 this.PanelContenedor.Controls.RemoveAt(0);
+                
             }
             Form frm = formHijo as Form;
             frm.TopLevel = false;
@@ -57,7 +59,7 @@ namespace AutomotrizFront.Presentacion
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AbrirSubForm(new frmVendedores());
+            AbrirSubForm(new frmClientes());
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -97,6 +99,21 @@ namespace AutomotrizFront.Presentacion
         private void LkbAcercaDe_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             AbrirSubForm(new FrmAcercaDe());
+        }
+
+        private void MenuVertical_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirSubForm(new BajaFactura());
+        }
+
+        private void BtnReporte_Click(object sender, EventArgs e)
+        {
+            AbrirSubForm(new FrmClientesReport());
         }
     }
 }

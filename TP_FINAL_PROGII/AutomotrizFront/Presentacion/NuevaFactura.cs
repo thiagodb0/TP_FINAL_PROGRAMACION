@@ -19,6 +19,7 @@ namespace AutomotrizFront.Presentacion
         public NuevaFactura()
         {
             InitializeComponent();
+            nueva = new Factura();
         }
 
         private void NuevaFactura_Load(object sender, EventArgs e)
@@ -28,9 +29,9 @@ namespace AutomotrizFront.Presentacion
             CargarVendedoresAsync();
             CargarFormasPago();
             ProxFact();
-            nueva = new Factura();
+            
             DgvDetalles.ForeColor = Color.Black;
-    
+
         }
 
         private async void ProxFact()
@@ -39,7 +40,7 @@ namespace AutomotrizFront.Presentacion
             var result = await ClientSingleton.Getinstance().GetAsync(url);
             var nro = result.ToString();
             LblNroFact.Text = "N° Factura: " + nro;
-            
+
         }
 
         private async void CargarAutosAsync()
@@ -109,6 +110,11 @@ namespace AutomotrizFront.Presentacion
 
 
         }
+
+
+        
+
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -202,6 +208,8 @@ namespace AutomotrizFront.Presentacion
         {
 
         }
+
+        
 
 
 

@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataAPIAutomo\DataAPIAutomo.csproj" />
+    <ProjectReference Include="..\ReportAutomotriz\ReportAutomotriz.csproj" />
   </ItemGroup>
 
   <ItemGroup>

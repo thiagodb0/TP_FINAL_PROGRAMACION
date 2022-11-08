@@ -26,5 +26,11 @@ namespace DataAPIAutomo.Datos.Interfaces
         public bool CrearProducto(Producto producto);
 
         public int ProxFact();
+
+        public bool BajaFactura(NroParam nro);
+
+        public List<Factura> GetFacturas();
+        public List<ClienteReport> GetClienteReports(string nombre);
+       
     }
 }

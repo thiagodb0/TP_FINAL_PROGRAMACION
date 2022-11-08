@@ -153,5 +153,60 @@ namespace ApiAutomotriz.Controllers
                 return StatusCode(500, "Error interno! Intente luego");
             }
         }
+
+
+        [HttpPost("/bajaFact")]
+
+        public IActionResult PutFactura(NroParam nro)
+        {
+            try
+            {
+                if (nro == null)
+                {
+                    return BadRequest("Datos de la factura incorrectos!");
+                }
+
+                return Ok(dataApi.BajaFactura(nro));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
+            }
+        }
+
+        [HttpGet("/facturas")]
+
+        public IActionResult GetFacturas()
+        {
+            List<Factura> lst = null;
+            try
+            {
+                lst = dataApi.GetFacturas();
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+
+            }
+        }
+
+
+        [HttpGet("/clientRepor/{nombre}")]
+
+        public IActionResult GetClientesRep(string nombre)
+        {
+            List<ClienteReport> lst = null;
+            try
+            {
+                lst = dataApi.GetClientesReport(nombre);
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+
+            }
+        }
     }
 }

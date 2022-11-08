@@ -20,6 +20,16 @@ namespace DataAPIAutomo.Dominio
             detalles = new List<Detalle>();
         }
 
+        public Factura(int codFactura, DateTime fecha, Cliente cliente, FormaPago forma_Pago, Vendedor vendedor)
+        {
+            CodFactura = codFactura;
+            Fecha = fecha;
+            Cliente = cliente;
+            Forma_Pago = forma_Pago;
+            Vendedor = vendedor;
+            this.detalles = null;
+        }
+
         public void AddDetalle(Detalle d)
         {
             detalles.Add(d);
