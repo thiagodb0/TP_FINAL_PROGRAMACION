@@ -20,7 +20,7 @@ namespace AutomotrizFront.Presentacion
             InitializeComponent();
         }
 
-        private async void GetClientes(string nombre)
+        private async Task GetClientes(string nombre)
         {
             string url = "http://localhost:5239/clientRepor/" + nombre;
             var result = await ClientSingleton.Getinstance().GetAsync(url);
@@ -41,11 +41,11 @@ namespace AutomotrizFront.Presentacion
             
         }
 
-        private void BtnBuscar_Click(object sender, EventArgs e)
+        private async void BtnBuscar_Click(object sender, EventArgs e)
         {
             DgvCliente.Rows.Clear();
             string nombre = TxtNombre.Text;
-            GetClientes(nombre);
+            await GetClientes(nombre);
         }
     }
 }

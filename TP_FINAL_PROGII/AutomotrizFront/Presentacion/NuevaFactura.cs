@@ -20,25 +20,22 @@ namespace AutomotrizFront.Presentacion
         {
             InitializeComponent();
             nueva = new Factura();
-            CargarAutosAsync();
-            CargarClientesAsync();
-            CargarVendedoresAsync();
-            CargarFormasPago();
+           
             
         }
 
-        private void NuevaFactura_Load(object sender, EventArgs e)
+        private async void NuevaFactura_Load(object sender, EventArgs e)
         {
-            ProxFact();
-            CargarAutosAsync();
-            CargarClientesAsync();
-            CargarVendedoresAsync();
-            CargarFormasPago();
+           await ProxFact();
+           await CargarAutosAsync();
+           await CargarClientesAsync();
+           await CargarVendedoresAsync();
+           await CargarFormasPago();
             DgvDetalles.ForeColor = Color.Black;
 
         }
 
-        private async void ProxFact()
+        private async Task ProxFact()
         {
             string url = "http://localhost:5239/nrofact";
             var result = await ClientSingleton.Getinstance().GetAsync(url);
@@ -47,7 +44,7 @@ namespace AutomotrizFront.Presentacion
 
         }
 
-        private async void CargarAutosAsync()
+        private async Task CargarAutosAsync()
         {
             string url = "http://localhost:5239/autos";
             var result = await ClientSingleton.Getinstance().GetAsync(url);
@@ -57,7 +54,7 @@ namespace AutomotrizFront.Presentacion
             CboProductos.ValueMember = "Codigo";
 
         }
-        private async void CargarFormasPago()
+        private async Task CargarFormasPago()
         {
             string url = "http://localhost:5239/formas_pago";
             var result = await ClientSingleton.Getinstance().GetAsync(url);
@@ -68,7 +65,7 @@ namespace AutomotrizFront.Presentacion
         }
 
 
-        private async void CargarClientesAsync()
+        private async Task CargarClientesAsync()
         {
             string url = "http://localhost:5239/clientes";
             var result = await ClientSingleton.Getinstance().GetAsync(url);
@@ -78,7 +75,7 @@ namespace AutomotrizFront.Presentacion
             CboClientes.ValueMember = "Id";
         }
 
-        private async void CargarVendedoresAsync()
+        private async Task CargarVendedoresAsync()
         {
             string url = "http://localhost:5239/vendedores";
             var result = await ClientSingleton.Getinstance().GetAsync(url);

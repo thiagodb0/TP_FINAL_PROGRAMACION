@@ -47,9 +47,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(107, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 20);
+            this.label1.Size = new System.Drawing.Size(261, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Reporte Vendedores :";
+            this.label1.Text = "Ingrese el cliente: :";
             // 
             // TxtNombre
             // 
@@ -73,7 +73,7 @@
             this.DgvCliente.Name = "DgvCliente";
             this.DgvCliente.RowHeadersWidth = 51;
             this.DgvCliente.RowTemplate.Height = 29;
-            this.DgvCliente.Size = new System.Drawing.Size(875, 454);
+            this.DgvCliente.Size = new System.Drawing.Size(1211, 690);
             this.DgvCliente.TabIndex = 2;
             // 
             // CmnCodigo
@@ -130,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.ClientSize = new System.Drawing.Size(1235, 816);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.DgvCliente);
             this.Controls.Add(this.TxtNombre);

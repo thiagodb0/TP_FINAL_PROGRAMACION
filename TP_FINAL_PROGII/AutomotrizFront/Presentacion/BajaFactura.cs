@@ -20,13 +20,13 @@ namespace AutomotrizFront.Presentacion
             InitializeComponent();
         }
 
-        private void BajaFactura_Load(object sender, EventArgs e)
+        private async void BajaFactura_Load(object sender, EventArgs e)
         {
-            CargarFacturasAsync();
+           await CargarFacturasAsync();
         }
 
 
-        private async void CargarFacturasAsync()
+        private async Task CargarFacturasAsync()
         {
             string url = "http://localhost:5239/facturas";
             var result = await ClientSingleton.Getinstance().GetAsync(url);
@@ -39,7 +39,7 @@ namespace AutomotrizFront.Presentacion
         }
 
 
-        private async void BajarFactura(NroParam nro)
+        private async Task BajarFactura(NroParam nro)
         {
             string bodyContent = JsonConvert.SerializeObject(nro);
 
@@ -63,11 +63,11 @@ namespace AutomotrizFront.Presentacion
 
         }
 
-        private void BtnDarBaja_Click(object sender, EventArgs e)
+        private async void BtnDarBaja_Click(object sender, EventArgs e)
         {
             int num = Convert.ToInt32(Dgfacturas.CurrentRow.Cells["CmnNroFact"].Value.ToString());
             NroParam nro = new NroParam(num);
-            BajarFactura(nro);
+            await BajarFactura(nro);
         }
     }
 }

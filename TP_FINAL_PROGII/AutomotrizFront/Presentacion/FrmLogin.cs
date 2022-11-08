@@ -26,7 +26,7 @@ namespace AutomotrizFront
             }
         }
 
-        private void frmInicio_Load(object sender, EventArgs e)
+        private async void frmInicio_Load(object sender, EventArgs e)
         {
             txtContraseña.UseSystemPasswordChar = true;
             LblIncorrecto.ForeColor = Color.OrangeRed;
@@ -42,6 +42,9 @@ namespace AutomotrizFront
             this.Close();
         }
 
-        
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

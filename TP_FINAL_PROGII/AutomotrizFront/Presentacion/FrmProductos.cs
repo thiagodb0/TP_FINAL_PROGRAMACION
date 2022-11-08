@@ -19,13 +19,14 @@ namespace AutomotrizFront.Presentacion
         public FrmProductos()
         {
             InitializeComponent();
-            CargarMarcasAsyinc();
+            
         }
 
-        private void FrmProductos_Load(object sender, EventArgs e)
+        private async void FrmProductos_Load(object sender, EventArgs e)
         {
             nuevo = new Producto();
-            CargarAutosAsync();
+           await CargarAutosAsync();
+            await CargarMarcasAsyinc();
             DgvProductos.ForeColor = Color.Black;
             
             
@@ -35,7 +36,7 @@ namespace AutomotrizFront.Presentacion
        
 
 
-        private async void CargarAutosAsync()
+        private async Task CargarAutosAsync()
         {
             string url = "http://localhost:5239/autos";
             var result = await ClientSingleton.Getinstance().GetAsync(url);
@@ -47,7 +48,7 @@ namespace AutomotrizFront.Presentacion
 
         }
 
-        private async void CargarMarcasAsyinc()
+        private async Task CargarMarcasAsyinc()
         {
             string url = "http://localhost:5239/marcas";
             var result = await ClientSingleton.Getinstance().GetAsync(url);
@@ -118,7 +119,7 @@ namespace AutomotrizFront.Presentacion
 
         }
 
-        private void BtnCargar_Click(object sender, EventArgs e)
+        private async void BtnCargar_Click(object sender, EventArgs e)
         {
             if (TxtCodigo.Text.Equals(string.Empty))
             {
@@ -152,7 +153,7 @@ namespace AutomotrizFront.Presentacion
             }
 
 
-            GuardarProductoAsync();
+           await GuardarProductoAsync();
             DgvProductos.Rows.Clear();
             CargarAutosAsync();
         }

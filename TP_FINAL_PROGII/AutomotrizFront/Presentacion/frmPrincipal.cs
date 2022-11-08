@@ -36,22 +36,39 @@ namespace AutomotrizFront.Presentacion
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        private void AbrirSubForm(object formHijo)
+
+
+        //private void AbrirSubForm(object formHijo)
+        //{
+        //    if (PanelContenedor.Controls.Count>0)
+        //    {
+        //        this.PanelContenedor.Controls.RemoveAt(0);
+
+        //    }
+        //    Form frm = formHijo as Form;
+        //    frm.TopLevel = false;
+        //    frm.Dock = DockStyle.Fill;
+        //    this.PanelContenedor.Controls.Add(frm);
+        //    this.PanelContenedor.Tag = frm;
+        //    frm.Show();
+
+        //}
+
+        private Form activeForm = null;
+        private void AbrirSubForm(Form formHijo)
         {
-            if (PanelContenedor.Controls.Count>0)
-            {
-                this.PanelContenedor.Controls.RemoveAt(0);
-                
-            }
-            Form frm = formHijo as Form;
-            frm.TopLevel = false;
-            frm.Dock = DockStyle.Fill;
-            this.PanelContenedor.Controls.Add(frm);
-            this.PanelContenedor.Tag = frm;
-            frm.Show();
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = formHijo;
+            formHijo.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+            PanelContenedor.Controls.Add(formHijo);
+            PanelContenedor.Tag = formHijo;
+            formHijo.BringToFront();
+            formHijo.Show();
 
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
             AbrirSubForm(new NuevaFactura()); ;

@@ -38,13 +38,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LblIncorrecto = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCuenta
             // 
             this.txtCuenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCuenta.Location = new System.Drawing.Point(137, 199);
+            this.txtCuenta.Location = new System.Drawing.Point(261, 182);
             this.txtCuenta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCuenta.Name = "txtCuenta";
             this.txtCuenta.Size = new System.Drawing.Size(193, 27);
@@ -52,7 +56,7 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(137, 273);
+            this.txtContraseña.Location = new System.Drawing.Point(261, 256);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(193, 27);
@@ -64,7 +68,7 @@
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAceptar.Location = new System.Drawing.Point(137, 337);
+            this.btnAceptar.Location = new System.Drawing.Point(261, 320);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(0);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(193, 40);
@@ -117,7 +121,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(137, 173);
+            this.label1.Location = new System.Drawing.Point(261, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 4;
@@ -128,7 +132,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(137, 248);
+            this.label2.Location = new System.Drawing.Point(261, 231);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 20);
             this.label2.TabIndex = 5;
@@ -139,11 +143,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(137, 69);
+            this.label3.Location = new System.Drawing.Point(119, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(193, 30);
+            this.label3.Size = new System.Drawing.Size(247, 30);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Automotriz";
+            this.label3.Text = "Inicie Sesion";
             // 
             // LblIncorrecto
             // 
@@ -153,12 +157,34 @@
             this.LblIncorrecto.Size = new System.Drawing.Size(0, 20);
             this.LblIncorrecto.TabIndex = 7;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AutomotrizFront.Properties.Resources.Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(-199, -178);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::AutomotrizFront.Properties.Resources.Logo_Corporativo_Estudio_Elegante_Profesional_Blanco_Negro_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(-128, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(482, 447);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(501, 433);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LblIncorrecto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -167,6 +193,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtCuenta);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmInicio";
@@ -174,6 +201,8 @@
             this.Text = "Iniciar Sesion";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +220,7 @@
         private Label label2;
         private Label label3;
         private Label LblIncorrecto;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
