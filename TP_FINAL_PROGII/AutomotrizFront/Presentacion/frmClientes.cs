@@ -22,7 +22,7 @@ namespace AutomotrizFront.Presentacion
 
         private async void GetClientes(string nombre)
         {
-            string url = "http://localhost:5239/clientRepor?nombre=" + nombre;
+            string url = "http://localhost:5239/clientRepor/" + nombre;
             var result = await ClientSingleton.Getinstance().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<ClienteReport>>(result);
             foreach (ClienteReport cr in lst)
@@ -43,6 +43,7 @@ namespace AutomotrizFront.Presentacion
 
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
+            DgvCliente.Rows.Clear();
             string nombre = TxtNombre.Text;
             GetClientes(nombre);
         }

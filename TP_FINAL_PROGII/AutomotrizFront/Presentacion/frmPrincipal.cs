@@ -94,6 +94,7 @@ namespace AutomotrizFront.Presentacion
         private void BtnProductos_Click(object sender, EventArgs e)
         {
             AbrirSubForm(new FrmProductos());
+            
         }
 
         private void LkbAcercaDe_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

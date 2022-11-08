@@ -20,16 +20,20 @@ namespace AutomotrizFront.Presentacion
         {
             InitializeComponent();
             nueva = new Factura();
-        }
-
-        private void NuevaFactura_Load(object sender, EventArgs e)
-        {
             CargarAutosAsync();
             CargarClientesAsync();
             CargarVendedoresAsync();
             CargarFormasPago();
-            ProxFact();
             
+        }
+
+        private void NuevaFactura_Load(object sender, EventArgs e)
+        {
+            ProxFact();
+            CargarAutosAsync();
+            CargarClientesAsync();
+            CargarVendedoresAsync();
+            CargarFormasPago();
             DgvDetalles.ForeColor = Color.Black;
 
         }

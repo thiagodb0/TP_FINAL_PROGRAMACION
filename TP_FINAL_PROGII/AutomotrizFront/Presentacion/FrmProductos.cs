@@ -19,6 +19,7 @@ namespace AutomotrizFront.Presentacion
         public FrmProductos()
         {
             InitializeComponent();
+            CargarMarcasAsyinc();
         }
 
         private void FrmProductos_Load(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace AutomotrizFront.Presentacion
             nuevo = new Producto();
             CargarAutosAsync();
             DgvProductos.ForeColor = Color.Black;
-            CargarMarcasAsyinc();
+            
             
         }
 
@@ -154,6 +155,16 @@ namespace AutomotrizFront.Presentacion
             GuardarProductoAsync();
             DgvProductos.Rows.Clear();
             CargarAutosAsync();
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Esta seguro de abandonar el formulario?", "Atencion!"
+                , MessageBoxButtons.YesNo
+                , MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Close();
+            }
         }
     }
 }
