@@ -71,5 +71,10 @@ namespace DataAPIAutomo.Fachada
         {
             return dao.GetClienteReports(nombre);
         }
+
+        public List<Usuario> GetUsuarios()
+            {
+            return dao.GetUsuarios();
+            }
     }
 }

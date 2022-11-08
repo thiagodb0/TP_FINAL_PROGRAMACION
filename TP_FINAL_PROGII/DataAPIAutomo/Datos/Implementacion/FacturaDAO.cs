@@ -342,5 +342,23 @@ namespace DataAPIAutomo.Datos.Implementacion
             cnn.Close();
             return lst;
         }
+
+        public List<Usuario> GetUsuarios()
+        {
+            List<Usuario> lst = new List<Usuario>();
+            string sp = "PA_CONS_USUARIOS";
+            DataTable t = HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
+
+            foreach (DataRow dr in t.Rows)
+            {
+                string usuario = (dr["usuario"].ToString());
+                string clave = dr["contraseña"].ToString();
+                Usuario u = new Usuario(usuario, clave);
+                lst.Add(u);
+
+
+            }
+            return lst;
+        }
     }
 }

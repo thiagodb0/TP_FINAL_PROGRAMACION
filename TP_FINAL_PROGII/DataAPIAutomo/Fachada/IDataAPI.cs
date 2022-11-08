@@ -18,6 +18,7 @@ namespace DataAPIAutomo.Fachada
 
         public List<Marca> GetMarcas();
         public List<Modelo> GetModelos();
+        public List<Usuario> GetUsuarios();
 
         public bool SaveFactura(Factura oFactura);
         public bool SaveProducto (Producto oProduct);

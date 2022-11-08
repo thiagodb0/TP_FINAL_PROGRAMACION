@@ -31,6 +31,8 @@ namespace DataAPIAutomo.Datos.Interfaces
 
         public List<Factura> GetFacturas();
         public List<ClienteReport> GetClienteReports(string nombre);
+
+        public List<Usuario> GetUsuarios();
        
     }
 }

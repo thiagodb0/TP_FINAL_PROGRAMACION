@@ -208,5 +208,24 @@ namespace ApiAutomotriz.Controllers
 
             }
         }
+
+
+        [HttpGet("/usuarios")]
+
+        public IActionResult GetUsuarios()
+        {
+            List<Usuario> lst = null;
+            try
+            {
+                lst = dataApi.GetUsuarios();
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente Luego");
+
+            }
+        }
+
     }
 }
