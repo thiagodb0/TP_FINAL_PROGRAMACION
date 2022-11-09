@@ -76,5 +76,10 @@ namespace DataAPIAutomo.Fachada
             {
             return dao.GetUsuarios();
             }
+
+        public bool AlterProducto(Producto product)
+        {
+            return dao.AlterProducto(product);
+        }
     }
 }

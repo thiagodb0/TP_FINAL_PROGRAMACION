@@ -33,6 +33,17 @@ namespace DataAPIAutomo.Datos.Interfaces
         public List<ClienteReport> GetClienteReports(string nombre);
 
         public List<Usuario> GetUsuarios();
+
+
+
+
+
+
+
+
+
+
+        public bool AlterProducto(Producto p);
        
     }
 }

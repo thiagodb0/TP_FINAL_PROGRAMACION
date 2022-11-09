@@ -36,5 +36,25 @@ namespace ApiAutomotriz.Controllers
             }
         }
 
+
+        [HttpPost("/AlterProducto")]
+
+        public IActionResult AlterProducto(Producto product)
+        {
+            try
+            {
+                if (product == null)
+                {
+                    return BadRequest("Datos de Producto incorrectos!");
+                }
+
+                return Ok(dataApi.SaveProducto(product));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
+            }
+        }
+
     }
 }

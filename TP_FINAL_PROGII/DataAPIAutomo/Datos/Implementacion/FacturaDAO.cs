@@ -360,5 +360,48 @@ namespace DataAPIAutomo.Datos.Implementacion
             }
             return lst;
         }
+
+
+        public bool AlterProducto(Producto producto)
+        {
+            bool ok = true;
+            SqlConnection cnn = HelperDB.ObtenerInstancia().ObtenerConexion();
+            SqlTransaction t = null;
+            SqlCommand cmd = new SqlCommand();
+            try
+            {
+
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                cmd.Connection = cnn;
+                cmd.Transaction = t;
+                cmd.CommandText = "PA_ALTER_PRODUCTO";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@cod", producto.Codigo);
+                cmd.Parameters.AddWithValue("@desc", producto.Descripcion);
+                cmd.Parameters.AddWithValue("@precio", producto.Precio);
+                cmd.Parameters.AddWithValue("@cod_tipo", producto.Tipo_prod);
+                cmd.Parameters.AddWithValue("@stock", producto.Stock);
+                cmd.Parameters.AddWithValue("@stockmin", producto.StockMin);
+                cmd.Parameters.AddWithValue("@model", producto.modelo);
+                cmd.Parameters.AddWithValue("@cod_marca", producto.Marca);
+                cmd.ExecuteNonQuery();
+                t.Commit();
+            }
+            catch (Exception)
+            {
+                if (t != null)
+                    t.Rollback();
+                ok = false;
+            }
+
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                    cnn.Close();
+            }
+
+            return ok;
+        }
     }
 }

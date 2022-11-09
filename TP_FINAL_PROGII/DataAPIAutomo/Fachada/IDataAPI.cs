@@ -27,6 +27,8 @@ namespace DataAPIAutomo.Fachada
         public bool BajaFactura(NroParam nro);
         public List<Factura> GetFacturas();
 
-        public List<ClienteReport> GetClientesReport(string nombre); 
+        public List<ClienteReport> GetClientesReport(string nombre);
+
+        public bool AlterProducto(Producto p);
     }
 }
