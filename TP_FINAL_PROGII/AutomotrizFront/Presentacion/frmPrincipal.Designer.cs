@@ -355,6 +355,7 @@
             this.BtnEliminarPr.Text = "Eliminar";
             this.BtnEliminarPr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEliminarPr.UseVisualStyleBackColor = true;
+            this.BtnEliminarPr.Click += new System.EventHandler(this.BtnEliminarPr_Click);
             // 
             // BtnAltaPrd
             // 

@@ -211,5 +211,11 @@ namespace AutomotrizFront.Presentacion
             AbrirSubForm(new FrmAuxiliar());
             ocultarSubMen();
         }
+
+        private void BtnEliminarPr_Click(object sender, EventArgs e)
+        {
+            AbrirSubForm(new FrmBajaProd());
+            ocultarSubMen();
+        }
     }
 }

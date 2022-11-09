@@ -229,22 +229,22 @@ namespace ApiAutomotriz.Controllers
 
 
 
-        [HttpGet("/tiposDoc")]
+       // [HttpGet("/tiposDoc")]
 
-        public IActionResult GetTiposDoc()
-        {
-            List<TipoDoc> lst = null;
-            try
-            {
-                lst = dataApi.GetTipoDocs();
-                return Ok(lst);
-            }
-            catch (Exception)
-            {
-                return StatusCode(500, "Error interno! Intente Luego");
+        //public IActionResult GetTiposDoc()
+        //{
+        //    List<TipoDoc> lst = null;
+        //    try
+        //    {
+        //        lst = dataApi.GetTipoDocs();
+        //        return Ok(lst);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return StatusCode(500, "Error interno! Intente Luego");
 
-            }
-        }
+        //    }
+        //}
 
     }
 }

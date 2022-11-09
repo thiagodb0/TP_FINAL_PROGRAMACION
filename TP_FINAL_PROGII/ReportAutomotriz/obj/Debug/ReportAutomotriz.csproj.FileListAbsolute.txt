@@ -63,3 +63,5 @@ C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\ReportAutomotr
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\ReportAutomotriz\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\ReportAutomotriz\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\ReportAutomotriz\obj\Debug\ReportAutomotriz.csproj.CopyComplete
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\ReportAutomotriz\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\ReportAutomotriz\bin\Debug\Newtonsoft.Json.xml

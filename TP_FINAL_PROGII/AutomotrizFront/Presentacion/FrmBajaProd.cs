@@ -57,7 +57,8 @@ namespace AutomotrizFront.Presentacion
 
         private void BtnBaja_Click(object sender, EventArgs e)
         {
-            int num = Convert.ToInt32(DgvProductos.CurrentRow.Cells["Cmncodigo"].Value.ToString());
+            //int num = Convert.ToInt32(DgvProductos.CurrentRow.Cells["Cmncodigo"].Value.ToString());
+            int num = Convert.ToInt32(TxtCodigo.Text);
             NroParam nro = new NroParam(num);
             BajarProd(nro);
         }

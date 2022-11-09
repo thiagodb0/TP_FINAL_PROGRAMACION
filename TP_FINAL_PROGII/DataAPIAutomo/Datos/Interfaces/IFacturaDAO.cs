@@ -34,7 +34,7 @@ namespace DataAPIAutomo.Datos.Interfaces
 
         public List<Usuario> GetUsuarios();
 
-        public List<TipoDoc> GetTiposDoc();
+       // public List<TipoDoc> GetTiposDoc();
 
 
 
