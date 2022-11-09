@@ -59,6 +59,21 @@ namespace AutomotrizFront.Presentacion
             CboMarca.ValueMember = "Id";
 
         }
+        private bool ValidarInt(string txt)
+        {
+            bool valid = false;
+            try
+            {
+                Convert.ToInt32(txt);
+                valid = false;
+            }
+            catch (Exception)
+            {
+
+                valid = true;
+            }
+            return valid;
+        }
 
         //private async void CargarModelosAsyinc()
         //{
@@ -152,9 +167,25 @@ namespace AutomotrizFront.Presentacion
                 MessageBox.Show("Debe seleccionar el tipo de producto", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+            if (ValidarInt(TxtCodigo.Text))
+            {
+                MessageBox.Show("Algunos campos deben ser numericos", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (ValidarInt(TxtStock.Text))
+            {
+                MessageBox.Show("Algunos campos deben ser numericos", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (ValidarInt(TxtStockMin.Text))
+            {
+                MessageBox.Show("algunos campos deben ser numeros", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+                TxtStockMin.Focus();
+            }
 
 
-           await GuardarProductoAsync();
+            await GuardarProductoAsync();
             DgvProductos.Rows.Clear();
             await CargarAutosAsync();
         }

@@ -72,6 +72,7 @@
             this.DgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvProductos.Size = new System.Drawing.Size(1202, 488);
             this.DgvProductos.TabIndex = 38;
+            this.DgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProductos_CellContentClick);
             // 
             // Cmncodigo
             // 

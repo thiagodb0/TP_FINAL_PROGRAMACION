@@ -96,6 +96,21 @@ namespace AutomotrizFront.Presentacion
 
 
         }
+        private bool ValidarInt(string txt)
+        {
+            bool valid = false;
+            try
+            {
+                Convert.ToInt32(txt);
+                valid = false;
+            }
+            catch (Exception)
+            {
+
+                valid = true;
+            }
+            return valid;
+        }
 
         private async void BtnCargar_Click(object sender, EventArgs e)
         {
@@ -128,6 +143,24 @@ namespace AutomotrizFront.Presentacion
             {
                 MessageBox.Show("Debe seleccionar el tipo de producto", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
+            }
+            if (ValidarInt(TxtCodigo.Text))
+            {
+                MessageBox.Show("algunos campos deben ser numeros", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+           
+            if (ValidarInt(TxtStock.Text))
+            {
+                MessageBox.Show("algunos campos deben ser numeros", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+                TxtStock.Focus();
+            }
+            if (ValidarInt(TxtStockMin.Text))
+            {
+                MessageBox.Show("algunos campos deben ser numeros", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+                TxtStockMin.Focus();
             }
 
 
@@ -171,6 +204,7 @@ namespace AutomotrizFront.Presentacion
 
         private async void DgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             int cod = Convert.ToInt32(DgvProductos.CurrentRow.Cells["CmnCodigo"].Value.ToString());
             CargarCampos(cod);
         }
