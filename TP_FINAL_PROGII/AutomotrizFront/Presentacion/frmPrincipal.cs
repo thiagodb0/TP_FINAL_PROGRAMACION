@@ -19,6 +19,7 @@ namespace AutomotrizFront.Presentacion
         public frmPrincipal()
         {
             InitializeComponent();
+            CambiarDiseño();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -38,6 +39,35 @@ namespace AutomotrizFront.Presentacion
         }
 
 
+        private void CambiarDiseño()
+        {
+            PanelSubemnuProd.Visible = false;
+            PanelSubMenClientes.Visible = false;
+            PanelSubMenVentas.Visible = false;
+        }
+
+        private void ocultarSubMen()
+        {
+            if (PanelSubemnuProd.Visible == true)
+                PanelSubemnuProd.Visible = false;
+            if (PanelSubMenClientes.Visible == true)
+                PanelSubMenClientes.Visible = false;
+            if(PanelSubMenVentas.Visible == true)
+                PanelSubMenVentas.Visible=false;    
+        }
+
+
+        private void MostrarSubMenu(Panel subMenu)
+        {
+            if(subMenu.Visible == false)
+            {
+                ocultarSubMen();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
         //private void AbrirSubForm(object formHijo)
         //{
         //    if (PanelContenedor.Controls.Count>0)
@@ -53,6 +83,9 @@ namespace AutomotrizFront.Presentacion
         //    frm.Show();
 
         //}
+
+
+
 
         private Form activeForm = null;
         private void AbrirSubForm(Form formHijo)
@@ -71,12 +104,14 @@ namespace AutomotrizFront.Presentacion
         }
         private void button5_Click(object sender, EventArgs e)
         {
-            AbrirSubForm(new NuevaFactura()); ;
+            AbrirSubForm(new NuevaFactura());
+            ocultarSubMen();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AbrirSubForm(new frmClientes());
+            
+            MostrarSubMenu(PanelSubMenClientes);
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -110,7 +145,8 @@ namespace AutomotrizFront.Presentacion
 
         private void BtnProductos_Click(object sender, EventArgs e)
         {
-            AbrirSubForm(new FrmProductos());
+            
+            MostrarSubMenu(PanelSubemnuProd);
             
         }
 
@@ -127,11 +163,40 @@ namespace AutomotrizFront.Presentacion
         private void button1_Click(object sender, EventArgs e)
         {
             AbrirSubForm(new BajaFactura());
+            ocultarSubMen();
         }
 
         private void BtnReporte_Click(object sender, EventArgs e)
         {
             AbrirSubForm(new FrmClientesReport());
+            ocultarSubMen();
+        }
+
+        private void BtnAltaCliiente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtnVentas_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenu(PanelSubMenVentas);
+        }
+
+        private void BtnConsClientes_Click(object sender, EventArgs e)
+        {
+            AbrirSubForm(new frmClientes());
+            ocultarSubMen();
+        }
+
+        private void BtnAltaPrd_Click(object sender, EventArgs e)
+        {
+            AbrirSubForm(new FrmProductos());
+            ocultarSubMen();
         }
     }
 }
