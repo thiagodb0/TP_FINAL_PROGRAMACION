@@ -17,7 +17,7 @@ namespace AutomotrizFront.Presentacion
             InitializeComponent();
         }
 
-        private void FrmClienteNuevo_Load(object sender, EventArgs e)
+        private async void FrmClienteNuevo_Load(object sender, EventArgs e)
         {
 
         }
@@ -26,5 +26,16 @@ namespace AutomotrizFront.Presentacion
         {
 
         }
+
+
+        //private async Task CargarTipoDoc()
+        //{
+        //    string url = "http://localhost:5239/marcas";
+        //    var result = await ClientSingleton.Getinstance().GetAsync(url);
+        //    var lst = JsonConvert.DeserializeObject<List<Marca>>(result);
+        //    CboMarca.DataSource = lst;
+        //    CboMarca.DisplayMember = "Descripcion";
+        //    CboMarca.ValueMember = "Id";
+        //}
     }
 }

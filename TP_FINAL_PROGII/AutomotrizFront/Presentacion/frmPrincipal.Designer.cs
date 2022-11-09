@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnMax = new System.Windows.Forms.PictureBox();
             this.btnMinimizarTamanio = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
@@ -71,6 +72,7 @@
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Controls.Add(this.btnMax);
             this.BarraTitulo.Controls.Add(this.btnMinimizarTamanio);
             this.BarraTitulo.Controls.Add(this.btnMin);
@@ -84,6 +86,15 @@
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(305, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
             // 
             // btnMax
             // 
@@ -207,6 +218,7 @@
             this.BtnBajaCliente.Text = "Bajar Cliente";
             this.BtnBajaCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnBajaCliente.UseVisualStyleBackColor = true;
+            this.BtnBajaCliente.Click += new System.EventHandler(this.BtnBajaCliente_Click);
             // 
             // BtnAltaCliiente
             // 
@@ -476,6 +488,7 @@
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
             this.BarraTitulo.ResumeLayout(false);
+            this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizarTamanio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
@@ -519,5 +532,6 @@
         private Button BtnAltaPrd;
         private Button BtnBajaCliente;
         private Button BtnConsClientes;
+        private Label label1;
     }
 }

@@ -143,6 +143,16 @@ namespace AutomotrizFront.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Not_Found {
+            get {
+                object obj = ResourceManager.GetObject("Not Found", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap outline_add_shopping_cart_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_add_shopping_cart_white_24dp", resourceCulture);

@@ -168,13 +168,14 @@ namespace AutomotrizFront.Presentacion
 
         private void BtnReporte_Click(object sender, EventArgs e)
         {
-            AbrirSubForm(new FrmClientesReport());
+            AbrirSubForm(new FrmAuxiliar());
             ocultarSubMen();
         }
 
         private void BtnAltaCliiente_Click(object sender, EventArgs e)
         {
-
+            AbrirSubForm(new FrmAuxiliar());
+            ocultarSubMen();
         }
 
         private void BarraTitulo_Paint(object sender, PaintEventArgs e)
@@ -202,6 +203,12 @@ namespace AutomotrizFront.Presentacion
         private void BtnModificarPr_Click(object sender, EventArgs e)
         {
             AbrirSubForm(new FrmAlterProducto());
+            ocultarSubMen();
+        }
+
+        private void BtnBajaCliente_Click(object sender, EventArgs e)
+        {
+            AbrirSubForm(new FrmAuxiliar());
             ocultarSubMen();
         }
     }
