@@ -36,6 +36,24 @@ cod_marca = @cod_marca
 where cod_producto = @cod
 end
 
+
+alter table productos
+add estado varchar(50)
+update productos 
+set estado = 'Activo'
+
+
+create procedure PA_BAJA_PROD
+@nro int
+as
+begin
+update productos
+set estado = 'Baja'
+where cod_producto = @nro
+end
+
+exec PA_BAJA_PROD 15
+
 select * from productos
 
 
