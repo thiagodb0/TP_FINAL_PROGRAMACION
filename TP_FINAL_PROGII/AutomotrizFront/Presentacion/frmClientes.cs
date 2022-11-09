@@ -44,7 +44,10 @@ namespace AutomotrizFront.Presentacion
         private async void BtnBuscar_Click(object sender, EventArgs e)
         {
             DgvCliente.Rows.Clear();
-            string nombre = TxtNombre.Text;
+            string nombre = "";
+            nombre = TxtNombre.Text;
+            if (nombre == null)
+                nombre = "";
             await GetClientes(nombre);
         }
     }
