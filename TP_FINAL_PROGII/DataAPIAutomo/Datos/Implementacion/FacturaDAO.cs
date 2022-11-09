@@ -403,5 +403,23 @@ namespace DataAPIAutomo.Datos.Implementacion
 
             return ok;
         }
+
+        public List<TipoDoc> GetTiposDoc()
+        {
+            List<TipoDoc> lst = new List<TipoDoc>();
+            string sp = "PA_CONS_TIPODOC";
+            DataTable t = HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
+
+            foreach (DataRow dr in t.Rows)
+            {
+                int cod = Convert.ToInt32(dr["cod_tipo_doc"].ToString());
+                string desc = dr["descripcion"].ToString();
+                TipoDoc td = new TipoDoc(cod, desc);
+                lst.Add(td);
+
+
+            }
+            return lst;
+        }
     }
 }

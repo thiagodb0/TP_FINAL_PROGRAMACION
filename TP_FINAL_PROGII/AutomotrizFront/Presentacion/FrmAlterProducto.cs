@@ -148,7 +148,7 @@ namespace AutomotrizFront.Presentacion
                     TxtPrecio.Text = p.Precio.ToString();
                     TxtStock.Text = p.Stock.ToString();
                     TxtStockMin.Text = p.StockMin.ToString();
-                    CboMarca.SelectedIndex = p.Marca;
+                    CboMarca.SelectedIndex = p.Marca -1;
                     if (p.Tipo_prod == 1)
                     {
                         RbtAuto.Checked = true;

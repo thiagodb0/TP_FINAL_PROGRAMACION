@@ -81,5 +81,10 @@ namespace DataAPIAutomo.Fachada
         {
             return dao.AlterProducto(product);
         }
+
+        public List<TipoDoc> GetTipoDocs()
+        {
+            return dao.GetTiposDoc();
+        }
     }
 }

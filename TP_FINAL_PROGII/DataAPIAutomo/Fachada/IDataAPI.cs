@@ -30,5 +30,7 @@ namespace DataAPIAutomo.Fachada
         public List<ClienteReport> GetClientesReport(string nombre);
 
         public bool AlterProducto(Producto p);
+
+        public List<TipoDoc> GetTipoDocs();
     }
 }
