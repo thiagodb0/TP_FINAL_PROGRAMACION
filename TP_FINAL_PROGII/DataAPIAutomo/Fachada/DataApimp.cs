@@ -81,5 +81,10 @@ namespace DataAPIAutomo.Fachada
         {
             return dao.AlterProducto(product);
         }
+
+        public bool BajaProd(NroParam nro)
+        {
+            return dao.BajaProducto(nro);
+        }
     }
 }

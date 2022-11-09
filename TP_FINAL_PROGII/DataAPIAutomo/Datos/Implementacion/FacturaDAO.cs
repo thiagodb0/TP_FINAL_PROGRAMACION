@@ -403,5 +403,43 @@ namespace DataAPIAutomo.Datos.Implementacion
 
             return ok;
         }
+
+
+        public bool BajaProducto(NroParam nro)
+        {
+            bool ok = true;
+            SqlConnection cnn = HelperDB.ObtenerInstancia().ObtenerConexion();
+            SqlTransaction t = null;
+            SqlCommand cmd = new SqlCommand();
+            try
+            {
+
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                cmd.Connection = cnn;
+                cmd.Transaction = t;
+                cmd.CommandText = "PA_BAJA_PROD";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nro", nro.nro);
+
+                cmd.ExecuteNonQuery();
+                t.Commit();
+            }
+            catch (Exception)
+            {
+                if (t != null)
+                    t.Rollback();
+                ok = false;
+            }
+
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                    cnn.Close();
+            }
+
+            return ok;
+        }
     }
+}
 }

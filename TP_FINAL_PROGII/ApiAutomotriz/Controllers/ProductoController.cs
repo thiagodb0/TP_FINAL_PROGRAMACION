@@ -55,6 +55,24 @@ namespace ApiAutomotriz.Controllers
                 return StatusCode(500, "Error interno! Intente luego");
             }
         }
+        [HttpPost("/bajaProd")]
+
+        public IActionResult PutFactura(NroParam nro)
+        {
+            try
+            {
+                if (nro == null)
+                {
+                    return BadRequest("Datos del Producto incorrectos!");
+                }
+
+                return Ok(dataApi.BajaFactura(nro));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
+            }
+        }
 
     }
 }
