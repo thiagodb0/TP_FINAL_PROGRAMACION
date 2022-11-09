@@ -44,6 +44,7 @@ namespace DataAPIAutomo.Datos.Interfaces
 
 
         public bool AlterProducto(Producto p);
-       
+
+        public bool BajaProducto(NroParam nro);
     }
 }

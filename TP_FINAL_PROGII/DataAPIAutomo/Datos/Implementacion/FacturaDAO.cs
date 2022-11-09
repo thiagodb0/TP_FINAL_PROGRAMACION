@@ -404,22 +404,42 @@ namespace DataAPIAutomo.Datos.Implementacion
             return ok;
         }
 
-        public List<TipoDoc> GetTiposDoc()
+
+        public bool BajaProducto(NroParam nro)
         {
-            List<TipoDoc> lst = new List<TipoDoc>();
-            string sp = "PA_CONS_TIPODOC";
-            DataTable t = HelperDB.ObtenerInstancia().ConsultaSQL(sp, null);
-
-            foreach (DataRow dr in t.Rows)
+            bool ok = true;
+            SqlConnection cnn = HelperDB.ObtenerInstancia().ObtenerConexion();
+            SqlTransaction t = null;
+            SqlCommand cmd = new SqlCommand();
+            try
             {
-                int cod = Convert.ToInt32(dr["cod_tipo_doc"].ToString());
-                string desc = dr["descripcion"].ToString();
-                TipoDoc td = new TipoDoc(cod, desc);
-                lst.Add(td);
 
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                cmd.Connection = cnn;
+                cmd.Transaction = t;
+                cmd.CommandText = "PA_BAJA_PROD";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nro", nro.nro);
 
+                cmd.ExecuteNonQuery();
+                t.Commit();
             }
-            return lst;
+            catch (Exception)
+            {
+                if (t != null)
+                    t.Rollback();
+                ok = false;
+            }
+
+            finally
+            {
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                    cnn.Close();
+            }
+
+            return ok;
         }
     }
+}
 }

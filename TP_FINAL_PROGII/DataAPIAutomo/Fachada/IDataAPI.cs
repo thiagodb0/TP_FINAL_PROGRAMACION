@@ -31,6 +31,6 @@ namespace DataAPIAutomo.Fachada
 
         public bool AlterProducto(Producto p);
 
-        public List<TipoDoc> GetTipoDocs();
+        public bool BajaProd(NroParam nro);
     }
 }
