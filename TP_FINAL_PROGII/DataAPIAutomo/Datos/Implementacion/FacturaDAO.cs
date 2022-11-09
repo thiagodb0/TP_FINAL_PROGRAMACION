@@ -375,7 +375,7 @@ namespace DataAPIAutomo.Datos.Implementacion
                 t = cnn.BeginTransaction();
                 cmd.Connection = cnn;
                 cmd.Transaction = t;
-                cmd.CommandText = "PA_ALTER_PRODUCTO";
+                cmd.CommandText = "PA_UPD_PROD";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@cod", producto.Codigo);
                 cmd.Parameters.AddWithValue("@desc", producto.Descripcion);

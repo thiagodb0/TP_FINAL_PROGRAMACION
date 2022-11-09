@@ -326,6 +326,7 @@
             this.BtnModificarPr.Text = "Modificar";
             this.BtnModificarPr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnModificarPr.UseVisualStyleBackColor = true;
+            this.BtnModificarPr.Click += new System.EventHandler(this.BtnModificarPr_Click);
             // 
             // BtnEliminarPr
             // 

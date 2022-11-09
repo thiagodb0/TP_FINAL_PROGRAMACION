@@ -16,5 +16,15 @@ namespace AutomotrizFront.Presentacion
         {
             InitializeComponent();
         }
+
+        private void FrmClienteNuevo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

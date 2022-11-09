@@ -87,3 +87,4 @@ C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFron
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\bin\Debug\net6.0-windows\SqlServerTypes\x86\SqlServerSpatial140.dll
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.frmClientes.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmClienteNuevo.resources
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmAlterProducto.resources

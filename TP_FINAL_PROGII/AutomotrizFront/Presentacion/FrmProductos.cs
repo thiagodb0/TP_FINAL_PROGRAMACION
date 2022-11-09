@@ -38,12 +38,13 @@ namespace AutomotrizFront.Presentacion
 
         private async Task CargarAutosAsync()
         {
+            
             string url = "http://localhost:5239/autos";
             var result = await ClientSingleton.Getinstance().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<Producto>>(result);
             foreach (Producto p in lst)
             {
-                DgvProductos.Rows.Add(new object[] {p.Codigo, p.Descripcion, p.Precio ,p.Stock, p.StockMin, } );
+                DgvProductos.Rows.Add(new object[] {p.Codigo, p.Descripcion, p.Precio ,p.Stock, p.StockMin} );
             }
 
         }
@@ -100,7 +101,7 @@ namespace AutomotrizFront.Presentacion
             if (result.Equals("true"))
             {
                 MessageBox.Show("Producto Guardado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Dispose();
+                //this.Dispose();
             }
             else
             {
@@ -146,7 +147,7 @@ namespace AutomotrizFront.Presentacion
                 MessageBox.Show("Debe seleccionar una marca", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            if(RbtAuto.Checked == false || RbtRepuesto.Checked==false)
+            if(RbtAuto.Checked == false && RbtRepuesto.Checked==false)
             {
                 MessageBox.Show("Debe seleccionar el tipo de producto", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -155,7 +156,7 @@ namespace AutomotrizFront.Presentacion
 
            await GuardarProductoAsync();
             DgvProductos.Rows.Clear();
-            CargarAutosAsync();
+            await CargarAutosAsync();
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)

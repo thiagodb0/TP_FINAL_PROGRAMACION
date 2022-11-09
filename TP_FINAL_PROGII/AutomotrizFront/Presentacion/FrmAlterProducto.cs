@@ -26,6 +26,7 @@ namespace AutomotrizFront.Presentacion
             nuevo = new Producto();
             await CargarAutosAsync();
             await CargarMarcasAsyinc();
+            TxtCodigo.Enabled = false;
             DgvProductos.ForeColor = Color.Black;
         }
 
@@ -37,7 +38,7 @@ namespace AutomotrizFront.Presentacion
             var lst = JsonConvert.DeserializeObject<List<Producto>>(result);
             foreach (Producto p in lst)
             {
-                DgvProductos.Rows.Add(new object[] { p.Codigo, p.Descripcion, p.Precio, p.Stock, p.StockMin, });
+                DgvProductos.Rows.Add(new object[] { p.Codigo, p.Descripcion, p.Precio, p.Stock, p.StockMin });
             }
 
         }
@@ -82,7 +83,7 @@ namespace AutomotrizFront.Presentacion
             if (result.Equals("true"))
             {
                 MessageBox.Show("Producto Guardado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Dispose();
+                //this.Dispose();
             }
             else
             {
@@ -123,7 +124,7 @@ namespace AutomotrizFront.Presentacion
                 MessageBox.Show("Debe seleccionar una marca", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            if (RbtAuto.Checked == false || RbtRepuesto.Checked == false)
+            if (RbtAuto.Checked == false && RbtRepuesto.Checked == false)
             {
                 MessageBox.Show("Debe seleccionar el tipo de producto", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -133,6 +134,45 @@ namespace AutomotrizFront.Presentacion
             await GuardarProductoAsync();
             DgvProductos.Rows.Clear();
             await CargarAutosAsync();
+        }
+
+        private async void CargarCampos(int cod)
+        {
+            List<Producto> lst = await GetLstProd();
+            foreach(Producto p in lst)
+            {
+                if(p.Codigo == cod)
+                {
+                    TxtCodigo.Text = p.Codigo.ToString();
+                    TxtDescripcion.Text = p.Descripcion.ToString();
+                    TxtPrecio.Text = p.Precio.ToString();
+                    TxtStock.Text = p.Stock.ToString();
+                    TxtStockMin.Text = p.StockMin.ToString();
+                    CboMarca.SelectedIndex = p.Marca;
+                    if (p.Tipo_prod == 1)
+                    {
+                        RbtAuto.Checked = true;
+                    }
+                    else
+                        RbtRepuesto.Checked = true;
+                }
+            }
+        }
+
+        private async Task<List<Producto>> GetLstProd()
+        {
+            string url = "http://localhost:5239/autos";
+            var result = await ClientSingleton.Getinstance().GetAsync(url);
+            var lst = JsonConvert.DeserializeObject<List<Producto>>(result);
+            return lst;
+        }
+
+
+
+        private async void DgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int cod = Convert.ToInt32(DgvProductos.CurrentRow.Cells["CmnCodigo"].Value.ToString());
+            CargarCampos(cod);
         }
     }
 }

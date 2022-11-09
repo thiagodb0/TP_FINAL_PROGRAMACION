@@ -48,7 +48,7 @@ namespace ApiAutomotriz.Controllers
                     return BadRequest("Datos de Producto incorrectos!");
                 }
 
-                return Ok(dataApi.SaveProducto(product));
+                return Ok(dataApi.AlterProducto(product));
             }
             catch (Exception ex)
             {
