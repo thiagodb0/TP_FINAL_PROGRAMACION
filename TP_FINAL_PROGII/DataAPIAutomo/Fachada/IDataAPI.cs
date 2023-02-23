@@ -32,5 +32,9 @@ namespace DataAPIAutomo.Fachada
         public bool AlterProducto(Producto p);
 
         public bool BajaProd(NroParam nro);
+
+        //public List<FacturaRev> GetFacturaRevs(int nro);
+
+        public List<DetalleRev> GetDetalleRevs(int nro);
     }
 }

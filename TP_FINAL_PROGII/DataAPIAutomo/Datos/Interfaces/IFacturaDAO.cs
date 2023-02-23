@@ -34,17 +34,13 @@ namespace DataAPIAutomo.Datos.Interfaces
 
         public List<Usuario> GetUsuarios();
 
-       // public List<TipoDoc> GetTiposDoc();
-
-
-
-
-
-
+        /*public List<FacturaRev> GetFacturasFiltro(int nro);*/
 
 
         public bool AlterProducto(Producto p);
 
         public bool BajaProducto(NroParam nro);
+
+        public List<DetalleRev> GetDetalleRevs(int nro);
     }
 }

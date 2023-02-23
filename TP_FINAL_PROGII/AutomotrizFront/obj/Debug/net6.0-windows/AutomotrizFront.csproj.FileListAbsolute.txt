@@ -90,3 +90,4 @@ C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFron
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmAlterProducto.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmBajaProd.resources
 C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmAuxiliar.resources
+C:\Users\Thiago\OneDrive\Documentos\TP_FINAL_PROG\TP_FINAL_PROGII\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.Presentacion.FrmRevFact.resources

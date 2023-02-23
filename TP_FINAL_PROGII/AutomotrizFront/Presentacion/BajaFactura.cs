@@ -15,6 +15,7 @@ namespace AutomotrizFront.Presentacion
 {
     public partial class BajaFactura : Form
     {
+        
         public BajaFactura()
         {
             InitializeComponent();
@@ -23,6 +24,7 @@ namespace AutomotrizFront.Presentacion
         private async void BajaFactura_Load(object sender, EventArgs e)
         {
            await CargarFacturasAsync();
+           
         }
 
 
@@ -57,17 +59,28 @@ namespace AutomotrizFront.Presentacion
             }
         }
 
+        public int nroF = 0;
 
         private void Dgfacturas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
+
+
+        
 
         private async void BtnDarBaja_Click(object sender, EventArgs e)
         {
             int num = Convert.ToInt32(Dgfacturas.CurrentRow.Cells["CmnNroFact"].Value.ToString());
             NroParam nro = new NroParam(num);
             await BajarFactura(nro);
+        }
+
+        private void BtnRevisar_Click(object sender, EventArgs e)
+        {
+            int nro = Convert.ToInt32(Dgfacturas.CurrentRow.Cells[0].Value.ToString());
+            FrmRevFact frm = new FrmRevFact(nro);
+            frm.ShowDialog();
         }
     }
 }

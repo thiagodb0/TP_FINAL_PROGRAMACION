@@ -86,5 +86,15 @@ namespace DataAPIAutomo.Fachada
         {
             return dao.BajaProducto(nro);
         }
+
+        public List<DetalleRev> GetDetalleRevs(int nro)
+        {
+            return dao.GetDetalleRevs(nro);
+        }
+
+        //public List<FacturaRev> GetFacturaRevs(int nro)
+        //{
+        //    return dao.GetFacturasFiltro(nro);
+        //}
     }
 }

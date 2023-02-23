@@ -440,6 +440,65 @@ namespace DataAPIAutomo.Datos.Implementacion
 
             return ok;
         }
+
+        //public List<FacturaRev> GetFacturasFiltro(int nro)
+        //{
+        //    List<FacturaRev> lst = new List<FacturaRev>();
+        //    string sp = "PA_CONS_FAC_NRO";
+        //    SqlConnection cnn = HelperDB.ObtenerInstancia().ObtenerConexion();
+        //    cnn.Open();
+        //    SqlCommand cmd = new SqlCommand(sp, cnn);
+        //    cmd.CommandType = CommandType.StoredProcedure;
+        //    cmd.Parameters.AddWithValue("@nro", nro);
+        //    DataTable t = new DataTable();
+        //    t.Load(cmd.ExecuteReader());
+
+        //    foreach (DataRow dr in t.Rows)
+        //    {
+        //        int cod = Convert.ToInt32(dr["Codigo"].ToString());
+        //        string prod = dr["Producto"].ToString(); 
+        //        double prec = Convert.ToDouble(dr["Precio"].ToString());
+        //        int cantidad = Convert.ToInt32(dr["Cantidad"].ToString());
+        //        FacturaRev fr = new FacturaRev(cod, prod, cantidad, prec);
+
+
+        //        lst.Add(fr);
+
+
+        //    }
+        //    cnn.Close();
+        //    return lst;
+        //}
+
+        public List<DetalleRev> GetDetalleRevs(int nro)
+        {
+            List<DetalleRev> lst = new List<DetalleRev>();
+            string sp = "PA_CONS_DET_NRO";
+            SqlConnection cnn = HelperDB.ObtenerInstancia().ObtenerConexion();
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(sp, cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@nro", nro);
+            DataTable t = new DataTable();
+            t.Load(cmd.ExecuteReader());
+
+            foreach (DataRow dr in t.Rows)
+            {
+                int fac = Convert.ToInt32(dr["Factura"].ToString());
+                int det = Convert.ToInt32(dr["Detalle"].ToString());               
+                int cantidad = Convert.ToInt32(dr["cantidad"].ToString());
+                double prec = Convert.ToDouble(dr["Precio"].ToString());
+                string prod = dr["Producto"].ToString();
+                DetalleRev Dr = new DetalleRev(fac, det,cantidad,prec,prod);
+
+
+                lst.Add(Dr);
+
+
+            }
+            cnn.Close();
+            return lst;
+        }
     }
 }
 

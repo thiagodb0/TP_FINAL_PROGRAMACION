@@ -128,6 +128,8 @@ namespace AutomotrizFront.Presentacion
                 CalcularTotal();
 
             }
+            
+            
         }
 
         private void CboProductos_SelectedIndexChanged(object sender, EventArgs e)

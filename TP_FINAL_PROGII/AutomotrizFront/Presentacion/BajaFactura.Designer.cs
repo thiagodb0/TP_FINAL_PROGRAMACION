@@ -38,6 +38,8 @@
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.BtnDarBaja = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.LblNro = new System.Windows.Forms.Label();
+            this.BtnRevisar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dgfacturas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,12 +140,31 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Seleccione la factura que desea dar de baja";
             // 
+            // LblNro
+            // 
+            this.LblNro.Location = new System.Drawing.Point(0, 0);
+            this.LblNro.Name = "LblNro";
+            this.LblNro.Size = new System.Drawing.Size(100, 23);
+            this.LblNro.TabIndex = 0;
+            // 
+            // BtnRevisar
+            // 
+            this.BtnRevisar.Location = new System.Drawing.Point(932, 715);
+            this.BtnRevisar.Name = "BtnRevisar";
+            this.BtnRevisar.Size = new System.Drawing.Size(94, 29);
+            this.BtnRevisar.TabIndex = 46;
+            this.BtnRevisar.Text = "Revisar";
+            this.BtnRevisar.UseVisualStyleBackColor = true;
+            this.BtnRevisar.Click += new System.EventHandler(this.BtnRevisar_Click);
+            // 
             // BajaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1217, 769);
+            this.Controls.Add(this.LblNro);
+            this.Controls.Add(this.BtnRevisar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnDarBaja);
             this.Controls.Add(this.BtnCancelar);
@@ -169,5 +190,7 @@
         private DataGridViewTextBoxColumn CmnCliente;
         private DataGridViewTextBoxColumn CmnVendedor;
         private DataGridViewTextBoxColumn CmnFormaPago;
+        private Label LblNro;
+        private Button BtnRevisar;
     }
 }

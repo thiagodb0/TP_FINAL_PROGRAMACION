@@ -47,7 +47,7 @@ namespace AutomotrizFront.Presentacion
             string nombre = "";
             nombre = TxtNombre.Text;
             if (nombre == null)
-                nombre = "";
+                nombre = " ";
             await GetClientes(nombre);
         }
     }

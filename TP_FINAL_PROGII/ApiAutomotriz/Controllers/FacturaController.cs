@@ -128,7 +128,7 @@ namespace ApiAutomotriz.Controllers
                 nro = dataApi.ProxFact();
                 return Ok(nro);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return StatusCode(500, "Error interno! Intente Luego");
             }
@@ -229,22 +229,39 @@ namespace ApiAutomotriz.Controllers
 
 
 
-       // [HttpGet("/tiposDoc")]
+        //[HttpGet("/facturaRev/{nro}")]
 
-        //public IActionResult GetTiposDoc()
+        //public IActionResult GetFactRev(int nro)
         //{
-        //    List<TipoDoc> lst = null;
+        //    List<FacturaRev> lst = null;
         //    try
         //    {
-        //        lst = dataApi.GetTipoDocs();
+        //        lst = dataApi.GetFacturaRevs(nro);
         //        return Ok(lst);
         //    }
-        //    catch (Exception)
+        //    catch(Exception)
         //    {
-        //        return StatusCode(500, "Error interno! Intente Luego");
-
+        //        return StatusCode(500, "Error interno intente luego");
         //    }
         //}
+
+
+        [HttpGet("/DetalleRev/{nro}")]
+
+        public IActionResult GetDetRev(int nro)
+        {
+            List<DetalleRev> lst = null;
+            try
+            {
+                lst = dataApi.GetDetalleRevs(nro);
+                return Ok(lst);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno intente luego");
+            }
+        }
+
 
     }
 }
