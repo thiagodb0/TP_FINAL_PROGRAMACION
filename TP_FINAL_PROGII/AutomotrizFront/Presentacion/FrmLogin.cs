@@ -76,5 +76,10 @@ namespace AutomotrizFront
         {
 
         }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

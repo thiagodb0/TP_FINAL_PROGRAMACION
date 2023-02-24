@@ -73,6 +73,26 @@ namespace AutomotrizFront.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap borde_nubes {
+            get {
+                object obj = ResourceManager.GetObject("borde nubes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap borde_nubes2 {
+            get {
+                object obj = ResourceManager.GetObject("borde nubes2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boton_eliminar {
             get {
                 object obj = ResourceManager.GetObject("boton-eliminar", resourceCulture);
@@ -206,6 +226,26 @@ namespace AutomotrizFront.Properties {
         internal static System.Drawing.Bitmap outline_supervisor_account_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_supervisor_account_white_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Registrate_con_facebook {
+            get {
+                object obj = ResourceManager.GetObject("Registrate con facebook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Registrate_con_Google {
+            get {
+                object obj = ResourceManager.GetObject("Registrate con Google", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
